@@ -1,0 +1,67 @@
+# --- DANH SÁCH PROVIDERS VÀ API LẤY DATA IP ---
+
+[geo-asn]
+maxmind
+- Database offline: GeoLite2-City.mmdb, GeoLite2-ASN.mmdb
+- API: https://geoip.maxmind.com/geoip/v2.1/city/{IP}
+
+ip2location
+- Database offline: LITE DB9 hoặc DB11 (.csv / .bin)
+- API: https://api.ip2location.io/?key={API_KEY}&ip={IP}
+
+ipinfo.io
+- API: https://ipinfo.io/{IP}/json?token={API_KEY}
+
+
+[abuse-company]
+iana (Toàn cầu - Tự động điều hướng đến đúng khu vực quản lý)
+- API (RDAP): https://rdap.iana.org/ip/{IP}
+
+apnic (Châu Á - Thái Bình Dương)
+- API (RDAP): https://rdap.apnic.net/ip/{IP}
+
+arin (Bắc Mỹ)
+- API (RDAP): https://rdap.arin.net/registry/ip/{IP}
+
+ripe (Châu Âu, Trung Đông, Trung Á)
+- API (RDAP): https://rdap.db.ripe.net/ip/{IP}
+
+lacnic (Mỹ Latinh và Vùng Caribe)
+- API (RDAP): https://rdap.lacnic.net/rdap/ip/{IP}
+
+afrinic (Châu Phi)
+- API (RDAP): https://rdap.afrinic.net/rdap/ip/{IP}
+
+
+[anonymous-proxy-vpn]
+tor-project
+- Data (List text): https://check.torproject.org/torbulkexitlist
+
+aws-cloud
+- Data (List json): https://ip-ranges.amazonaws.com/ip-ranges.json
+
+google-cloud
+- Data (List json): https://www.gstatic.com/ipranges/cloud.json
+
+abuseipdb
+- API: https://api.abuseipdb.com/api/v2/check?ipAddress={IP}
+
+ipqualityscore
+- API: https://www.ipqualityscore.com/api/json/ip/{API_KEY}/{IP}
+
+firehol-lists (Open Source Blocklists)
+- Nguồn tìm kiếm GitHub: firehol/blocklist-ipsets
+
+
+[domains-passive-dns]
+securitytrails
+- API: https://api.securitytrails.com/v1/ips/{IP}/domains
+
+hackertarget
+- API: https://api.hackertarget.com/reverseiplookup/?q={IP}
+
+virustotal
+- API: https://www.virustotal.com/api/v3/ip_addresses/{IP}
+
+rapid7-project-sonar
+- Data (Bulk Download): https://opendata.rapid7.com/

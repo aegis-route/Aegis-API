@@ -1,0 +1,157 @@
+# ==============================================================================
+# DANH SÁCH API TRUY VẤN JSON & JSON DATA FEEDS (CÓ FREE PLAN HOẶC MIỄN PHÍ)
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. API TRA CỨU TRỰC TIẾP THEO {IP} (TRẢ VỀ JSON - KHÔNG CẦN API KEY)
+# ------------------------------------------------------------------------------
+
+ip-api.com
+- API: http://ip-api.com/json/{IP}
+- Free Plan: 45 requests/phút (Miễn phí 100%, không cần đăng ký tài khoản hay API key)
+- Dữ liệu: Geolocation (Country, Region, City, Lat/Lon, Timezone), ASN, ISP, Org
+
+ipwho.is
+- API: https://ipwho.is/{IP}
+- Free Plan: 10,000 requests/tháng (Miễn phí, không cần API key)
+- Dữ liệu: Geolocation chi tiết, ASN, ISP, Timezone, Cờ bảo mật (VPN, Proxy, Tor, Hosting)
+
+freeipapi.com
+- API: https://freeipapi.com/api/json/{IP}
+- Free Plan: 60 requests/phút (Miễn phí, không cần API key)
+- Dữ liệu: Geolocation, Mã vùng điện thoại, Tiền tệ, Múi giờ, TLD
+
+ripestat (RIPE NCC BGP & Routing)
+- API: https://stat.ripe.net/data/prefix-overview/data.json?resource={IP}
+- Free Plan: Miễn phí hoàn toàn từ RIPE NCC (Không giới hạn thông thường, không cần key)
+- Dữ liệu: Routing BGP, AS announcement, Prefix network chính thức toàn cầu
+
+
+# ------------------------------------------------------------------------------
+# 2. API TRA CỨU TRỰC TIẾP THEO {IP} (TRẢ VỀ JSON - CẦN ĐĂNG KÝ FREE API KEY)
+# ------------------------------------------------------------------------------
+
+ipinfo.io
+- API: https://ipinfo.io/{IP}/json?token={API_KEY}
+- Free Plan: 50,000 requests/tháng miễn phí
+- Dữ liệu: Geolocation chuẩn xác cao, ASN, Hostname, Company, Anycast detection
+
+ipgeolocation.io
+- API: https://api.ipgeolocation.io/ipgeo?apiKey={API_KEY}&ip={IP}
+- Free Plan: 1,000 requests/ngày (~30,000 requests/tháng) miễn phí
+- Dữ liệu: Geolocation, ISP, Connection type, Currency, Timezone chi tiết
+
+ipdata.co
+- API: https://api.ipdata.co/{IP}?api-key={API_KEY}
+- Free Plan: 1,500 requests/ngày (~45,000 requests/tháng) miễn phí
+- Dữ liệu: Geolocation, ASN, Carrier, Threat intelligence (Tor, Proxy, Spam score)
+
+abstractapi.com (IP Geolocation)
+- API: https://ipgeolocation.abstractapi.com/v1/?api_key={API_KEY}&ip_address={IP}
+- Free Plan: 20,000 requests/tháng miễn phí
+- Dữ liệu: Geolocation, Security detection, Timezone, Currency
+
+ip2location.io
+- API: https://api.ip2location.io/?key={API_KEY}&ip={IP}
+- Free Plan: 30,000 requests/tháng miễn phí
+- Dữ liệu: Geolocation, ASN, Net speed, Proxy detection
+
+
+# ------------------------------------------------------------------------------
+# 3. API PHÁT HIỆN PROXY / VPN / FRAUD SCORE (TRẢ VỀ JSON - CÓ FREE KEY & LIMIT)
+# ------------------------------------------------------------------------------
+
+proxycheck.io
+- API: https://proxycheck.io/v2/{IP}?key={API_KEY}&vpn=1&asn=1&risk=1
+- Free Plan: 1,000 queries/ngày (hoặc 100 queries/ngày không cần key)
+- Sample Key: 76t514-6957we-h680qx-341c10
+- Signup: https://proxycheck.io/
+- Dữ liệu: Phát hiện Proxy, VPN, Tor, Compromised IP, ASN, Điểm rủi ro (Risk score 0-100)
+
+vpnapi.io
+- API: https://vpnapi.io/api/{IP}?key={API_KEY}
+- Free Plan: 1,000 queries/ngày (hoặc 100 queries/ngày không cần key)
+- Sample Key: fbfc5b18b29b4e4d92d9c58143b05206
+- Signup: https://vpnapi.io/signup
+- Dữ liệu: Cờ bảo mật (vpn, proxy, tor, relay: true/false), Geolocation, Network ASN
+
+iphub.info
+- API: https://v2.api.iphub.info/ip/{IP}
+- Headers: X-Key: {API_KEY}
+- Free Plan: 1,000 queries/ngày
+- Sample Key: MzEyMjk6SEJKd2VWVWFCSVRheEd6QnQ2UmhiUWJrQVJFZHVCSGs=
+- Signup: https://iphub.info/apiKey/newFree
+- Dữ liệu: Cờ phân loại block (0: Residential/Good IP, 1: Non-residential/Hosting/VPN, 2: Warning/Suspicious)
+
+getipintel.net
+- API: http://check.getipintel.net/check.php?ip={IP}&contact={EMAIL}&format=json&flags=m
+- Free Plan: 500+ queries/ngày (Yêu cầu cung cấp email liên hệ thật, không dùng fake email)
+- Info: https://getipintel.net/
+- Dữ liệu: Điểm xác suất Proxy/VPN từ 0.00 đến 1.00 (thường block nếu score > 0.95 hoặc 0.99)
+
+iphunter.info
+- API: https://www.iphunter.info:8082/v1/ip/{IP}
+- Headers: X-Key: {API_KEY}
+- Free Plan: 1,000 queries/ngày
+- Signup: https://www.iphunter.info/user/register
+- Dữ liệu: Cờ block (0: Residential, 1: Cloud/Hosting/Proxy, 2: Compromised), ISP, Country
+
+ipqualityscore.com
+- API: https://www.ipqualityscore.com/api/json/ip/{API_KEY}/{IP}?strictness=0&allow_public_access_points=false&lighter_penalties=true
+- Free Plan: 5,000 queries/tháng miễn phí
+- Signup: https://www.ipqualityscore.com/create-account
+- Dữ liệu: Fraud Score (0-100), Proxy, VPN, Tor, Active Bot, Recent Abuse, Connection type
+
+
+# ------------------------------------------------------------------------------
+# 4. CLOUD & CDN IP RANGES (JSON FEEDS ĐỒNG BỘ DẢI IP - 100% FREE, KHÔNG CẦN KEY)
+# ------------------------------------------------------------------------------
+
+[cloud-ip-ranges-json]
+aws-cloud
+- Data (List json): https://ip-ranges.amazonaws.com/ip-ranges.json
+- Dữ liệu: Toàn bộ dải IP CIDR của Amazon Web Services theo Region và Service
+
+google-cloud
+- Data (List json): https://www.gstatic.com/ipranges/cloud.json
+- Dữ liệu: Toàn bộ dải IP của Google Cloud Platform (GCP)
+
+cloudflare
+- API: https://api.cloudflare.com/client/v4/ips
+- Dữ liệu: Danh sách dải IPv4 & IPv6 CIDRs của mạng Cloudflare CDN/Proxy
+
+fastly
+- API: https://api.fastly.com/public-ip-list
+- Dữ liệu: Danh sách toàn bộ dải IP của mạng Fastly CDN
+
+github-meta
+- API: https://api.github.com/meta
+- Dữ liệu: Dải IP hạ tầng GitHub (Web, API, Git, Actions runner, Webhooks)
+
+oracle-cloud
+- Data (List json): https://docs.oracle.com/en-us/iaas/tools/public_ip_ranges.json
+- Dữ liệu: Danh sách IP ranges của hạ tầng Oracle Cloud Infrastructure (OCI)
+
+
+# ------------------------------------------------------------------------------
+# 5. GHI CHÚ: CÁC NGUỒN DỮ LIỆU OFFLINE & FEED KHÁC (NON-JSON)
+# ------------------------------------------------------------------------------
+
+[offline-databases]
+maxmind
+- Database offline: GeoLite2-City.mmdb, GeoLite2-ASN.mmdb, GeoLite2-Country.mmdb
+- Nguồn auto-sync: https://github.com/P3TERX/GeoLite.mmdb/releases/latest
+
+ip2location
+- Database offline: LITE DB9 hoặc DB11 (.csv / .bin)
+
+[feeds-blocklists-text]
+tor-project
+- Data (List text): https://check.torproject.org/torbulkexitlist
+
+firehol-lists (Open Source Blocklists)
+- Nguồn tìm kiếm GitHub: firehol/blocklist-ipsets
+
+[bulk-datasets]
+rapid7-project-sonar
+- Data (Bulk Download): https://opendata.rapid7.com/

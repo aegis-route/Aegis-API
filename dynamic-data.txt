@@ -1,0 +1,50 @@
+# --- DANH SÁCH DYNAMIC APIS (REALTIME ON-DEMAND LOOKUP THEO {IP}) ---
+
+[geo-asn]
+maxmind
+- API: https://geoip.maxmind.com/geoip/v2.1/city/{IP}
+
+ip2location
+- API: https://api.ip2location.io/?key={API_KEY}&ip={IP}
+
+ipinfo.io
+- API: https://ipinfo.io/{IP}/json?token={API_KEY}
+
+
+[abuse-company-rdap]
+iana (Toàn cầu - Tự động điều hướng đến đúng khu vực quản lý)
+- API (RDAP): https://rdap.iana.org/ip/{IP}
+
+apnic (Châu Á - Thái Bình Dương)
+- API (RDAP): https://rdap.apnic.net/ip/{IP}
+
+arin (Bắc Mỹ)
+- API (RDAP): https://rdap.arin.net/registry/ip/{IP}
+
+ripe (Châu Âu, Trung Đông, Trung Á)
+- API (RDAP): https://rdap.db.ripe.net/ip/{IP}
+
+lacnic (Mỹ Latinh và Vùng Caribe)
+- API (RDAP): https://rdap.lacnic.net/rdap/ip/{IP}
+
+afrinic (Châu Phi)
+- API (RDAP): https://rdap.afrinic.net/rdap/ip/{IP}
+
+
+[reputation-threat-score]
+abuseipdb
+- API: https://api.abuseipdb.com/api/v2/check?ipAddress={IP}
+
+ipqualityscore
+- API: https://www.ipqualityscore.com/api/json/ip/{API_KEY}/{IP}
+
+
+[domains-passive-dns]
+securitytrails
+- API: https://api.securitytrails.com/v1/ips/{IP}/domains
+
+hackertarget
+- API: https://api.hackertarget.com/reverseiplookup/?q={IP}
+
+virustotal
+- API: https://www.virustotal.com/api/v3/ip_addresses/{IP}

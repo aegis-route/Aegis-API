@@ -1,0 +1,22 @@
+{
+  "lastSync": "2026-10-12T06:00:33.580Z",
+  "releaseTag": "2026.10.10",
+  "publishedAt": "2026-10-10T06:43:30Z",
+  "files": {
+    "asn": {
+      "filename": "GeoLite2-ASN.mmdb",
+      "size": 8983422,
+      "updatedAt": "2026-10-12T06:00:33.567Z"
+    },
+    "city": {
+      "filename": "GeoLite2-City.mmdb",
+      "size": 50789481,
+      "updatedAt": "2026-10-12T06:00:33.577Z"
+    },
+    "country": {
+      "filename": "GeoLite2-Country.mmdb",
+      "size": 3410978,
+      "updatedAt": "2026-10-12T06:00:33.580Z"
+    }
+  }
+}

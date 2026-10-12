@@ -1,0 +1,33 @@
+{
+  "name": "aegis-api",
+  "version": "1.0.0",
+  "description": "High-performance IP Intelligence and GeoLite2 API with Auto-Sync",
+  "type": "module",
+  "bin": {
+    "aegis": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "cli": "node src/cli.js",
+    "test:keys": "node test-keys.js",
+    "docker:up": "docker compose up -d --build",
+    "docker:down": "docker compose down",
+    "docker:logs": "docker compose logs -f",
+    "pm2:start": "pm2 start ecosystem.config.cjs",
+    "pm2:stop": "pm2 stop ecosystem.config.cjs",
+    "pm2:restart": "pm2 restart ecosystem.config.cjs",
+    "pm2:logs": "pm2 logs aegis-api"
+  },
+  "bugs": {
+    "url": "https://github.com/aegis-route/Aegis-API/issues"
+  },
+  "homepage": "https://github.com/aegis-route/Aegis-API#readme",
+  "dependencies": {
+    "@fastify/cors": "^11.3.1",
+    "dotenv": "^18.0.7",
+    "fastify": "^5.12.5",
+    "maxmind": "^5.0.7",
+    "node-cron": "^4.6.0"
+  }
+}

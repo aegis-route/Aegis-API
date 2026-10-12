@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  aegis-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: aegis-api:latest
+    container_name: aegis-api
+    restart: unless-stopped
+    ports:
+      - "${PORT:-3000}:3000"
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - HOST=0.0.0.0
+      - DATA_DIR=/app/data
+    volumes:
+      # Mount persistent storage for GeoLite2 MMDB databases
+      - ./data:/app/data
+    deploy:
+      resources:
+        limits:
+          memory: 1024M
+          cpus: '2.0'
+        reservations:
+          memory: 256M
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
