@@ -6,24 +6,27 @@ const ALLOWED_TYPES = new Set(['asn', 'city', 'country', 'all']);
 /**
  * Extract real client IP from Fastify request (Cloudflare, Reverse Proxy, Direct)
  */
+/**
+ * Extract and validate real client IP from Fastify request (Cloudflare, Reverse Proxy, Direct)
+ */
 function getClientIp(req) {
-  const cfIp = req.headers['cf-connecting-ip'];
-  if (cfIp) return cfIp.trim();
+  const candidates = [
+    req.headers['cf-connecting-ip'],
+    req.headers['x-real-ip'],
+    typeof req.headers['x-forwarded-for'] === 'string' ? req.headers['x-forwarded-for'].split(',')[0] : null
+  ];
 
-  const forwarded = req.headers['x-forwarded-for'];
-  if (forwarded) {
-    const ips = forwarded.split(',');
-    if (ips.length > 0 && ips[0].trim()) {
-      return ips[0].trim();
+  for (const candidate of candidates) {
+    if (candidate) {
+      const trimmed = String(candidate).trim();
+      if (geoService.isValidIp(trimmed)) {
+        return trimmed;
+      }
     }
   }
 
-  const realIp = req.headers['x-real-ip'];
-  if (realIp) {
-    return realIp.trim();
-  }
-
-  return req.ip;
+  const rawIp = typeof req.ip === 'string' ? req.ip.trim() : '';
+  return geoService.isValidIp(rawIp) ? rawIp : '127.0.0.1';
 }
 
 export async function geoRoutes(fastify, options) {
@@ -54,6 +57,10 @@ export async function geoRoutes(fastify, options) {
   fastify.get('/info', async (req, reply) => {
     const ip = getClientIp(req);
     try {
+      if (!geoService.isValidIp(ip)) {
+        reply.status(400);
+        return { success: false, error: 'Unable to determine a valid client IP address' };
+      }
       const data = await formatService.format(ip, {
         enrich: req.query?.enrich !== 'false'
       });
@@ -68,13 +75,16 @@ export async function geoRoutes(fastify, options) {
   fastify.get('/me', async (req, reply) => {
     const ip = getClientIp(req);
     try {
+      if (!geoService.isValidIp(ip)) {
+        reply.status(400);
+        return { success: false, error: 'Unable to determine a valid client IP address' };
+      }
       return geoService.lookupAll(ip);
     } catch (err) {
       reply.status(err.statusCode || 500);
       return { success: false, error: err.message, ip };
     }
   });
-
   // Query all databases for given IP: /all/:ip
   fastify.get('/all/:ip', async (req, reply) => {
     const { ip } = req.params;

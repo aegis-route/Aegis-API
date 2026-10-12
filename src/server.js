@@ -1,5 +1,7 @@
 import Fastify from 'fastify';
 import cors from '@fastify/cors';
+import helmet from '@fastify/helmet';
+import rateLimit from '@fastify/rate-limit';
 import { config } from './config.js';
 import { geoRoutes } from './routes/geo.routes.js';
 import { syncRoutes } from './routes/sync.routes.js';
@@ -9,6 +11,18 @@ async function bootstrap() {
   const app = Fastify({
     logger: true,
     trustProxy: true
+  });
+
+  // Security Headers (OWASP)
+  await app.register(helmet, {
+    contentSecurityPolicy: false // API returns JSON
+  });
+
+  // Rate Limiting (Prevents DoS and API quota exhaustion)
+  await app.register(rateLimit, {
+    max: 120,
+    timeWindow: '1 minute',
+    allowList: ['127.0.0.1']
   });
 
   // Enable CORS

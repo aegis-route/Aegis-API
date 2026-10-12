@@ -1,3 +1,4 @@
+import crypto from 'node:crypto';
 import { syncService } from '../services/sync.service.js';
 import { geoService } from '../services/geo.service.js';
 import { config } from '../config.js';
@@ -23,20 +24,29 @@ export async function syncRoutes(fastify, options) {
 
   // Manual trigger sync endpoint (Protected)
   fastify.post('/sync', async (req, reply) => {
-    // Check API Key
-    if (config.syncApiKey) {
-      const headerKey = req.headers['x-sync-key'];
-      const authHeader = req.headers['authorization'];
-      const bearerKey = authHeader && authHeader.startsWith('Bearer ') ? authHeader.slice(7) : null;
-      const providedKey = headerKey || bearerKey;
+    // Enforce configured sync key
+    if (!config.syncApiKey || config.syncApiKey.trim().length === 0) {
+      reply.status(403);
+      return {
+        success: false,
+        error: 'Manual sync is disabled on this server. Configure SYNC_API_KEY in .env.'
+      };
+    }
 
-      if (!providedKey || providedKey !== config.syncApiKey) {
-        reply.status(401);
-        return {
-          success: false,
-          error: 'Unauthorized. Provide valid X-Sync-Key header or Bearer token.'
-        };
-      }
+    const headerKey = req.headers['x-sync-key'];
+    const authHeader = req.headers['authorization'];
+    const bearerKey = authHeader && authHeader.startsWith('Bearer ') ? authHeader.slice(7) : null;
+    const providedKey = String(headerKey || bearerKey || '');
+
+    const keyBuf = Buffer.from(providedKey);
+    const expectedBuf = Buffer.from(config.syncApiKey);
+
+    if (keyBuf.length !== expectedBuf.length || !crypto.timingSafeEqual(keyBuf, expectedBuf)) {
+      reply.status(401);
+      return {
+        success: false,
+        error: 'Unauthorized. Provide valid X-Sync-Key header or Bearer token.'
+      };
     }
 
     const force = req.query?.force === 'true' || req.body?.force === true;

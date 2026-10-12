@@ -25,6 +25,8 @@
   "homepage": "https://github.com/aegis-route/Aegis-API#readme",
   "dependencies": {
     "@fastify/cors": "^11.3.1",
+    "@fastify/helmet": "^13.1.2",
+    "@fastify/rate-limit": "^11.2.1",
     "dotenv": "^18.0.7",
     "fastify": "^5.12.5",
     "maxmind": "^5.0.7",
