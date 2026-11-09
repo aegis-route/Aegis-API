@@ -11,6 +11,7 @@
     "dev": "node --watch src/server.js",
     "cli": "node src/cli.js",
     "test:keys": "node test-keys.js",
+    "test:management": "node test-management.js",
     "docker:up": "docker compose up -d --build",
     "docker:down": "docker compose down",
     "docker:logs": "docker compose logs -f",

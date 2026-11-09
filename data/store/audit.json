@@ -1,0 +1,1435 @@
+{
+  "auditLogs": [
+    {
+      "id": "log-1794235459166-5c7854",
+      "timestamp": "21:44:19",
+      "operator": "admin@aegis",
+      "action": "BACKUP_RESTORE",
+      "target": "aegis-cluster-snapshot-20261109144419.backup",
+      "severity": "WARN",
+      "details": "Restored cluster configuration from snapshot aegis-cluster-snapshot-20261109144419.backup"
+    },
+    {
+      "id": "log-1794235459165-f95795",
+      "timestamp": "21:44:19",
+      "operator": "admin@aegis",
+      "action": "BACKUP_CREATE",
+      "target": "aegis-cluster-snapshot-20261109144419.backup",
+      "severity": "INFO",
+      "details": "Created full encrypted cluster backup aegis-cluster-snapshot-20261109144419.backup"
+    },
+    {
+      "id": "log-1794235459162-c35592",
+      "timestamp": "21:44:19",
+      "operator": "admin@aegis",
+      "action": "SYSTEM_LOCKDOWN",
+      "target": "CLUSTER_NETWORK",
+      "severity": "WARN",
+      "details": "Emergency lockdown deactivated"
+    },
+    {
+      "id": "log-1794235459161-0517a5",
+      "timestamp": "21:44:19",
+      "operator": "admin@aegis",
+      "action": "SYSTEM_LOCKDOWN",
+      "target": "CLUSTER_NETWORK",
+      "severity": "CRIT",
+      "details": "Emergency lockdown activated across all nodes"
+    },
+    {
+      "id": "log-1794235459160-3d56df",
+      "timestamp": "21:44:19",
+      "operator": "admin@aegis",
+      "action": "DNS_REWRITE_DELETE",
+      "target": "portal.aegis.local",
+      "severity": "WARN",
+      "details": "Deleted DNS rewrite for portal.aegis.local"
+    },
+    {
+      "id": "log-1794235456658-ba2074",
+      "timestamp": "21:44:16",
+      "operator": "admin@aegis",
+      "action": "DNS_REWRITE_ADD",
+      "target": "portal.aegis.local",
+      "severity": "INFO",
+      "details": "Mapped internal domain portal.aegis.local -> 192.168.100.10 in AdGuard Home"
+    },
+    {
+      "id": "log-1794235454133-46e50b",
+      "timestamp": "21:44:14",
+      "operator": "admin@aegis",
+      "action": "DNS_SERVICE_BLOCK",
+      "target": "minecraft",
+      "severity": "INFO",
+      "details": "Blocked Minecraft Online in AdGuard Home config"
+    },
+    {
+      "id": "log-1794235446629-ec7351",
+      "timestamp": "21:44:06",
+      "operator": "admin@aegis",
+      "action": "NAT_PORT_DELETE",
+      "target": "nat-#3",
+      "severity": "WARN",
+      "details": "Deleted NAT rule #3 (Web Port Forward Test)"
+    },
+    {
+      "id": "log-1794235446629-be034c",
+      "timestamp": "21:44:06",
+      "operator": "admin@aegis",
+      "action": "NAT_RULE_TOGGLE",
+      "target": "nat-#3",
+      "severity": "INFO",
+      "details": "Toggled NAT rule #3 to DISABLED"
+    },
+    {
+      "id": "log-1794235446628-61301a",
+      "timestamp": "21:44:06",
+      "operator": "admin@aegis",
+      "action": "NAT_PORT_ADD",
+      "target": "dstnat-8080",
+      "severity": "INFO",
+      "details": "Forward port 8080 (TCP) to 192.168.100.50:80"
+    },
+    {
+      "id": "log-1794235446626-e87c1e",
+      "timestamp": "21:44:06",
+      "operator": "admin@aegis",
+      "action": "CIDR_RULE_DELETE",
+      "target": "cidr-1794235446625",
+      "severity": "WARN",
+      "details": "Deleted CIDR rule cidr-1794235446625"
+    },
+    {
+      "id": "log-1794235446625-140c40",
+      "timestamp": "21:44:06",
+      "operator": "admin@aegis",
+      "action": "CIDR_RULE_ADD",
+      "target": "10.50.0.0/16",
+      "severity": "INFO",
+      "details": "Added CIDR rule 10.50.0.0/16 [ALLOW] to eBPF Map"
+    },
+    {
+      "id": "log-1794235446624-697094",
+      "timestamp": "21:44:06",
+      "operator": "admin@aegis",
+      "action": "AUTOBAN_CLEAR",
+      "target": "198.51.100.77",
+      "severity": "INFO",
+      "details": "Manual unban triggered for 198.51.100.77"
+    },
+    {
+      "id": "log-1794235446623-56822b",
+      "timestamp": "21:44:06",
+      "operator": "admin@aegis",
+      "action": "AUTOBAN_ADD",
+      "target": "198.51.100.77",
+      "severity": "WARN",
+      "details": "Banned IP 198.51.100.77 [Automated test ban] in eBPF LPM Trie Map"
+    },
+    {
+      "id": "log-1794235446620-5885e8",
+      "timestamp": "21:44:06",
+      "operator": "admin@aegis",
+      "action": "XDP_MODULE_CHANGE",
+      "target": "syn_flood",
+      "severity": "WARN",
+      "details": "Toggled module \"TCP SYN Flood Guard\" to mode MONITOR"
+    },
+    {
+      "id": "log-1794235312464-334c53",
+      "timestamp": "21:41:52",
+      "operator": "admin@aegis",
+      "action": "BACKUP_RESTORE",
+      "target": "aegis-cluster-snapshot-20261109144152.backup",
+      "severity": "WARN",
+      "details": "Restored cluster configuration from snapshot aegis-cluster-snapshot-20261109144152.backup"
+    },
+    {
+      "id": "log-1794235312463-35b1fe",
+      "timestamp": "21:41:52",
+      "operator": "admin@aegis",
+      "action": "BACKUP_CREATE",
+      "target": "aegis-cluster-snapshot-20261109144152.backup",
+      "severity": "INFO",
+      "details": "Created full encrypted cluster backup aegis-cluster-snapshot-20261109144152.backup"
+    },
+    {
+      "id": "log-1794235312460-78bfac",
+      "timestamp": "21:41:52",
+      "operator": "admin@aegis",
+      "action": "SYSTEM_LOCKDOWN",
+      "target": "CLUSTER_NETWORK",
+      "severity": "WARN",
+      "details": "Emergency lockdown deactivated"
+    },
+    {
+      "id": "log-1794235312446-295d0e",
+      "timestamp": "21:41:52",
+      "operator": "admin@aegis",
+      "action": "SYSTEM_LOCKDOWN",
+      "target": "CLUSTER_NETWORK",
+      "severity": "CRIT",
+      "details": "Emergency lockdown activated across all nodes"
+    },
+    {
+      "id": "log-1794235312445-85aa51",
+      "timestamp": "21:41:52",
+      "operator": "admin@aegis",
+      "action": "DNS_REWRITE_DELETE",
+      "target": "portal.aegis.local",
+      "severity": "WARN",
+      "details": "Deleted DNS rewrite for portal.aegis.local"
+    },
+    {
+      "id": "log-1794235309943-20272a",
+      "timestamp": "21:41:49",
+      "operator": "admin@aegis",
+      "action": "DNS_REWRITE_ADD",
+      "target": "portal.aegis.local",
+      "severity": "INFO",
+      "details": "Mapped internal domain portal.aegis.local -> 192.168.100.10 in AdGuard Home"
+    },
+    {
+      "id": "log-1794235307441-bfe67a",
+      "timestamp": "21:41:47",
+      "operator": "admin@aegis",
+      "action": "DNS_SERVICE_BLOCK",
+      "target": "minecraft",
+      "severity": "INFO",
+      "details": "Blocked Minecraft Online in AdGuard Home config"
+    },
+    {
+      "id": "log-1794235299937-c484de",
+      "timestamp": "21:41:39",
+      "operator": "admin@aegis",
+      "action": "NAT_PORT_DELETE",
+      "target": "nat-#3",
+      "severity": "WARN",
+      "details": "Deleted NAT rule #3 (Web Port Forward Test)"
+    },
+    {
+      "id": "log-1794235299936-9acfe2",
+      "timestamp": "21:41:39",
+      "operator": "admin@aegis",
+      "action": "NAT_RULE_TOGGLE",
+      "target": "nat-#3",
+      "severity": "INFO",
+      "details": "Toggled NAT rule #3 to DISABLED"
+    },
+    {
+      "id": "log-1794235299935-33857d",
+      "timestamp": "21:41:39",
+      "operator": "admin@aegis",
+      "action": "NAT_PORT_ADD",
+      "target": "dstnat-8080",
+      "severity": "INFO",
+      "details": "Forward port 8080 (TCP) to 192.168.100.50:80"
+    },
+    {
+      "id": "log-1794235299934-c9403b",
+      "timestamp": "21:41:39",
+      "operator": "admin@aegis",
+      "action": "CIDR_RULE_DELETE",
+      "target": "cidr-1794235299933",
+      "severity": "WARN",
+      "details": "Deleted CIDR rule cidr-1794235299933"
+    },
+    {
+      "id": "log-1794235299933-db4a31",
+      "timestamp": "21:41:39",
+      "operator": "admin@aegis",
+      "action": "CIDR_RULE_ADD",
+      "target": "10.50.0.0/16",
+      "severity": "INFO",
+      "details": "Added CIDR rule 10.50.0.0/16 [ALLOW] to eBPF Map"
+    },
+    {
+      "id": "log-1794235299932-19268f",
+      "timestamp": "21:41:39",
+      "operator": "admin@aegis",
+      "action": "AUTOBAN_CLEAR",
+      "target": "198.51.100.77",
+      "severity": "INFO",
+      "details": "Manual unban triggered for 198.51.100.77"
+    },
+    {
+      "id": "log-1794235299931-baa94b",
+      "timestamp": "21:41:39",
+      "operator": "admin@aegis",
+      "action": "AUTOBAN_ADD",
+      "target": "198.51.100.77",
+      "severity": "WARN",
+      "details": "Banned IP 198.51.100.77 [Automated test ban] in eBPF LPM Trie Map"
+    },
+    {
+      "id": "log-1794235299928-5005a3",
+      "timestamp": "21:41:39",
+      "operator": "admin@aegis",
+      "action": "XDP_MODULE_CHANGE",
+      "target": "syn_flood",
+      "severity": "WARN",
+      "details": "Toggled module \"TCP SYN Flood Guard\" to mode MONITOR"
+    },
+    {
+      "id": "log-1793392458996-ab145a",
+      "timestamp": "03:34:18",
+      "operator": "admin@aegis",
+      "action": "DNS_REWRITE_DELETE",
+      "target": "matrix.aegis.lan",
+      "severity": "WARN",
+      "details": "Deleted DNS rewrite for matrix.aegis.lan"
+    },
+    {
+      "id": "log-1793392457848-4a1803",
+      "timestamp": "03:34:17",
+      "operator": "admin@aegis",
+      "action": "DNS_REWRITE_ADD",
+      "target": "matrix.aegis.lan",
+      "severity": "INFO",
+      "details": "Mapped internal domain matrix.aegis.lan -> 10.10.100.88 in AdGuard Home"
+    },
+    {
+      "id": "log-1793392404132-e3e27e",
+      "timestamp": "03:33:24",
+      "operator": "admin@aegis",
+      "action": "DNS_REWRITE_DELETE",
+      "target": "wiki.aegis.lan",
+      "severity": "WARN",
+      "details": "Deleted DNS rewrite for wiki.aegis.lan"
+    },
+    {
+      "id": "log-1793392367926-68e6bb",
+      "timestamp": "03:32:47",
+      "operator": "admin@aegis",
+      "action": "DNS_REWRITE_ADD",
+      "target": "wiki.aegis.lan",
+      "severity": "INFO",
+      "details": "Mapped internal domain wiki.aegis.lan -> 10.10.100.50 in AdGuard Home"
+    },
+    {
+      "id": "log-1793392361368-6b5f7c",
+      "timestamp": "03:32:41",
+      "operator": "admin@aegis",
+      "action": "BACKUP_RESTORE",
+      "target": "aegis-cluster-snapshot-20261030203241.backup",
+      "severity": "WARN",
+      "details": "Restored cluster configuration from snapshot aegis-cluster-snapshot-20261030203241.backup"
+    },
+    {
+      "id": "log-1793392361367-743e42",
+      "timestamp": "03:32:41",
+      "operator": "admin@aegis",
+      "action": "BACKUP_CREATE",
+      "target": "aegis-cluster-snapshot-20261030203241.backup",
+      "severity": "INFO",
+      "details": "Created full encrypted cluster backup aegis-cluster-snapshot-20261030203241.backup"
+    },
+    {
+      "id": "log-1793392361362-8cefc6",
+      "timestamp": "03:32:41",
+      "operator": "admin@aegis",
+      "action": "SYSTEM_LOCKDOWN",
+      "target": "CLUSTER_NETWORK",
+      "severity": "WARN",
+      "details": "Emergency lockdown deactivated"
+    },
+    {
+      "id": "log-1793392361361-f1de3b",
+      "timestamp": "03:32:41",
+      "operator": "admin@aegis",
+      "action": "SYSTEM_LOCKDOWN",
+      "target": "CLUSTER_NETWORK",
+      "severity": "CRIT",
+      "details": "Emergency lockdown activated across all nodes"
+    },
+    {
+      "id": "log-1793392361359-96a651",
+      "timestamp": "03:32:41",
+      "operator": "admin@aegis",
+      "action": "DNS_REWRITE_DELETE",
+      "target": "portal.aegis.local",
+      "severity": "WARN",
+      "details": "Deleted DNS rewrite for portal.aegis.local"
+    },
+    {
+      "id": "log-1793392360836-9d205d",
+      "timestamp": "03:32:40",
+      "operator": "admin@aegis",
+      "action": "DNS_REWRITE_ADD",
+      "target": "portal.aegis.local",
+      "severity": "INFO",
+      "details": "Mapped internal domain portal.aegis.local -> 192.168.100.10 in AdGuard Home"
+    },
+    {
+      "id": "log-1793392360317-23f6cd",
+      "timestamp": "03:32:40",
+      "operator": "admin@aegis",
+      "action": "DNS_SERVICE_BLOCK",
+      "target": "minecraft",
+      "severity": "INFO",
+      "details": "Blocked Minecraft Online in AdGuard Home config"
+    },
+    {
+      "id": "log-1793392358547-35f6a4",
+      "timestamp": "03:32:38",
+      "operator": "admin@aegis",
+      "action": "NAT_PORT_DELETE",
+      "target": "nat-#3",
+      "severity": "WARN",
+      "details": "Deleted NAT rule #3 (Web Port Forward Test)"
+    },
+    {
+      "id": "log-1793392358546-536c4f",
+      "timestamp": "03:32:38",
+      "operator": "admin@aegis",
+      "action": "NAT_RULE_TOGGLE",
+      "target": "nat-#3",
+      "severity": "INFO",
+      "details": "Toggled NAT rule #3 to DISABLED"
+    },
+    {
+      "id": "log-1793392358545-b07b3e",
+      "timestamp": "03:32:38",
+      "operator": "admin@aegis",
+      "action": "NAT_PORT_ADD",
+      "target": "dstnat-8080",
+      "severity": "INFO",
+      "details": "Forward port 8080 (TCP) to 192.168.100.50:80"
+    },
+    {
+      "id": "log-1793392358544-9a570c",
+      "timestamp": "03:32:38",
+      "operator": "admin@aegis",
+      "action": "CIDR_RULE_DELETE",
+      "target": "cidr-1793392358543",
+      "severity": "WARN",
+      "details": "Deleted CIDR rule cidr-1793392358543"
+    },
+    {
+      "id": "log-1793392358543-a0c297",
+      "timestamp": "03:32:38",
+      "operator": "admin@aegis",
+      "action": "CIDR_RULE_ADD",
+      "target": "10.50.0.0/16",
+      "severity": "INFO",
+      "details": "Added CIDR rule 10.50.0.0/16 [ALLOW] to eBPF Map"
+    },
+    {
+      "id": "log-1793392358531-1d4947",
+      "timestamp": "03:32:38",
+      "operator": "admin@aegis",
+      "action": "AUTOBAN_CLEAR",
+      "target": "198.51.100.77",
+      "severity": "INFO",
+      "details": "Manual unban triggered for 198.51.100.77"
+    },
+    {
+      "id": "log-1793392358530-bc73ee",
+      "timestamp": "03:32:38",
+      "operator": "admin@aegis",
+      "action": "AUTOBAN_ADD",
+      "target": "198.51.100.77",
+      "severity": "WARN",
+      "details": "Banned IP 198.51.100.77 [Automated test ban] in eBPF LPM Trie Map"
+    },
+    {
+      "id": "log-1793392358515-ad5017",
+      "timestamp": "03:32:38",
+      "operator": "admin@aegis",
+      "action": "XDP_MODULE_CHANGE",
+      "target": "syn_flood",
+      "severity": "WARN",
+      "details": "Toggled module \"TCP SYN Flood Guard\" to mode MONITOR"
+    },
+    {
+      "id": "log-1793392231585-3fd830",
+      "timestamp": "03:30:31",
+      "operator": "admin@aegis",
+      "action": "DNS_REWRITE_ADD",
+      "target": "test-sync.aegis.lan",
+      "severity": "INFO",
+      "details": "Mapped internal domain test-sync.aegis.lan -> 10.10.100.99 in AdGuard Home"
+    },
+    {
+      "id": "log-1793391662960-5aa122",
+      "timestamp": "03:21:02",
+      "operator": "admin@aegis",
+      "action": "BACKUP_RESTORE",
+      "target": "aegis-cluster-snapshot-20261030202102.backup",
+      "severity": "WARN",
+      "details": "Restored cluster configuration from snapshot aegis-cluster-snapshot-20261030202102.backup"
+    },
+    {
+      "id": "log-1793391662960-3f0ddb",
+      "timestamp": "03:21:02",
+      "operator": "admin@aegis",
+      "action": "BACKUP_CREATE",
+      "target": "aegis-cluster-snapshot-20261030202102.backup",
+      "severity": "INFO",
+      "details": "Created full encrypted cluster backup aegis-cluster-snapshot-20261030202102.backup"
+    },
+    {
+      "id": "log-1793391662957-390c2a",
+      "timestamp": "03:21:02",
+      "operator": "admin@aegis",
+      "action": "SYSTEM_LOCKDOWN",
+      "target": "CLUSTER_NETWORK",
+      "severity": "WARN",
+      "details": "Emergency lockdown deactivated"
+    },
+    {
+      "id": "log-1793391662956-6ff16d",
+      "timestamp": "03:21:02",
+      "operator": "admin@aegis",
+      "action": "SYSTEM_LOCKDOWN",
+      "target": "CLUSTER_NETWORK",
+      "severity": "CRIT",
+      "details": "Emergency lockdown activated across all nodes"
+    },
+    {
+      "id": "log-1793391662954-9632c4",
+      "timestamp": "03:21:02",
+      "operator": "admin@aegis",
+      "action": "DNS_REWRITE_DELETE",
+      "target": "portal.aegis.local",
+      "severity": "WARN",
+      "details": "Deleted DNS rewrite for portal.aegis.local"
+    },
+    {
+      "id": "log-1793391662438-8635e2",
+      "timestamp": "03:21:02",
+      "operator": "admin@aegis",
+      "action": "DNS_REWRITE_ADD",
+      "target": "portal.aegis.local",
+      "severity": "INFO",
+      "details": "Mapped internal domain portal.aegis.local -> 192.168.100.10 in AdGuard Home"
+    },
+    {
+      "id": "log-1793391661904-a6f535",
+      "timestamp": "03:21:01",
+      "operator": "admin@aegis",
+      "action": "DNS_SERVICE_BLOCK",
+      "target": "minecraft",
+      "severity": "INFO",
+      "details": "Blocked Minecraft Online in AdGuard Home config"
+    },
+    {
+      "id": "log-1793391660125-648274",
+      "timestamp": "03:21:00",
+      "operator": "admin@aegis",
+      "action": "NAT_PORT_DELETE",
+      "target": "nat-#3",
+      "severity": "WARN",
+      "details": "Deleted NAT rule #3 (Web Port Forward Test)"
+    },
+    {
+      "id": "log-1793391660125-976dbb",
+      "timestamp": "03:21:00",
+      "operator": "admin@aegis",
+      "action": "NAT_RULE_TOGGLE",
+      "target": "nat-#3",
+      "severity": "INFO",
+      "details": "Toggled NAT rule #3 to DISABLED"
+    },
+    {
+      "id": "log-1793391660124-78f873",
+      "timestamp": "03:21:00",
+      "operator": "admin@aegis",
+      "action": "NAT_PORT_ADD",
+      "target": "dstnat-8080",
+      "severity": "INFO",
+      "details": "Forward port 8080 (TCP) to 192.168.100.50:80"
+    },
+    {
+      "id": "log-1793391660123-54f11a",
+      "timestamp": "03:21:00",
+      "operator": "admin@aegis",
+      "action": "CIDR_RULE_DELETE",
+      "target": "cidr-1793391660111",
+      "severity": "WARN",
+      "details": "Deleted CIDR rule cidr-1793391660111"
+    },
+    {
+      "id": "log-1793391660122-1692c0",
+      "timestamp": "03:21:00",
+      "operator": "admin@aegis",
+      "action": "CIDR_RULE_ADD",
+      "target": "10.50.0.0/16",
+      "severity": "INFO",
+      "details": "Added CIDR rule 10.50.0.0/16 [ALLOW] to eBPF Map"
+    },
+    {
+      "id": "log-1793391660110-949da7",
+      "timestamp": "03:21:00",
+      "operator": "admin@aegis",
+      "action": "AUTOBAN_CLEAR",
+      "target": "198.51.100.77",
+      "severity": "INFO",
+      "details": "Manual unban triggered for 198.51.100.77"
+    },
+    {
+      "id": "log-1793391660109-d9ed13",
+      "timestamp": "03:21:00",
+      "operator": "admin@aegis",
+      "action": "AUTOBAN_ADD",
+      "target": "198.51.100.77",
+      "severity": "WARN",
+      "details": "Banned IP 198.51.100.77 [Automated test ban] in eBPF LPM Trie Map"
+    },
+    {
+      "id": "log-1793391660093-7d9be5",
+      "timestamp": "03:21:00",
+      "operator": "admin@aegis",
+      "action": "XDP_MODULE_CHANGE",
+      "target": "syn_flood",
+      "severity": "WARN",
+      "details": "Toggled module \"TCP SYN Flood Guard\" to mode MONITOR"
+    },
+    {
+      "id": "log-1793380870713-6c7b07",
+      "timestamp": "00:21:10",
+      "operator": "admin@aegis",
+      "action": "BACKUP_RESTORE",
+      "target": "aegis-cluster-snapshot-20261030172110.backup",
+      "severity": "WARN",
+      "details": "Restored cluster configuration from snapshot aegis-cluster-snapshot-20261030172110.backup"
+    },
+    {
+      "id": "log-1793380870713-b2e2ac",
+      "timestamp": "00:21:10",
+      "operator": "admin@aegis",
+      "action": "BACKUP_CREATE",
+      "target": "aegis-cluster-snapshot-20261030172110.backup",
+      "severity": "INFO",
+      "details": "Created full encrypted cluster backup aegis-cluster-snapshot-20261030172110.backup"
+    },
+    {
+      "id": "log-1793380870710-16d26e",
+      "timestamp": "00:21:10",
+      "operator": "admin@aegis",
+      "action": "SYSTEM_LOCKDOWN",
+      "target": "CLUSTER_NETWORK",
+      "severity": "WARN",
+      "details": "Emergency lockdown deactivated"
+    },
+    {
+      "id": "log-1793380870709-4c63da",
+      "timestamp": "00:21:10",
+      "operator": "admin@aegis",
+      "action": "SYSTEM_LOCKDOWN",
+      "target": "CLUSTER_NETWORK",
+      "severity": "CRIT",
+      "details": "Emergency lockdown activated across all nodes"
+    },
+    {
+      "id": "log-1793380870708-cdfde7",
+      "timestamp": "00:21:10",
+      "operator": "admin@aegis",
+      "action": "DNS_REWRITE_DELETE",
+      "target": "portal.aegis.local",
+      "severity": "WARN",
+      "details": "Xóa ánh xạ DNS Rewrite cho portal.aegis.local khỏi AdGuard Home"
+    },
+    {
+      "id": "log-1793380870146-73ba8a",
+      "timestamp": "00:21:10",
+      "operator": "admin@aegis",
+      "action": "DNS_REWRITE_ADD",
+      "target": "portal.aegis.local",
+      "severity": "INFO",
+      "details": "Tạo ánh xạ DNS Rewrite portal.aegis.local -> 192.168.100.10 trên AdGuard Home"
+    },
+    {
+      "id": "log-1793380869642-f1ecc3",
+      "timestamp": "00:21:09",
+      "operator": "admin@aegis",
+      "action": "DNS_SERVICE_BLOCK",
+      "target": "minecraft",
+      "severity": "INFO",
+      "details": "Chặn dịch vụ \"Minecraft Online\" trên AdGuard Home (VM 103)"
+    },
+    {
+      "id": "log-1793380867764-dcc729",
+      "timestamp": "00:21:07",
+      "operator": "admin@aegis",
+      "action": "NAT_PORT_DELETE",
+      "target": "nat-#3",
+      "severity": "WARN",
+      "details": "Deleted NAT rule #3 (Web Port Forward Test)"
+    },
+    {
+      "id": "log-1793380867763-8767ee",
+      "timestamp": "00:21:07",
+      "operator": "admin@aegis",
+      "action": "NAT_RULE_TOGGLE",
+      "target": "nat-#3",
+      "severity": "INFO",
+      "details": "Toggled NAT rule #3 to DISABLED"
+    },
+    {
+      "id": "log-1793380867762-30b007",
+      "timestamp": "00:21:07",
+      "operator": "admin@aegis",
+      "action": "NAT_PORT_ADD",
+      "target": "dstnat-8080",
+      "severity": "INFO",
+      "details": "Forward port 8080 (TCP) to 192.168.100.50:80"
+    },
+    {
+      "id": "log-1793380867761-e41c2c",
+      "timestamp": "00:21:07",
+      "operator": "admin@aegis",
+      "action": "CIDR_RULE_DELETE",
+      "target": "cidr-1793380867760",
+      "severity": "WARN",
+      "details": "Deleted CIDR rule cidr-1793380867760"
+    },
+    {
+      "id": "log-1793380867760-78f1d1",
+      "timestamp": "00:21:07",
+      "operator": "admin@aegis",
+      "action": "CIDR_RULE_ADD",
+      "target": "10.50.0.0/16",
+      "severity": "INFO",
+      "details": "Added CIDR rule 10.50.0.0/16 [ALLOW] to eBPF Map"
+    },
+    {
+      "id": "log-1793380867759-bf0e0b",
+      "timestamp": "00:21:07",
+      "operator": "admin@aegis",
+      "action": "AUTOBAN_CLEAR",
+      "target": "198.51.100.77",
+      "severity": "INFO",
+      "details": "Manual unban triggered for 198.51.100.77"
+    },
+    {
+      "id": "log-1793380867758-9e7862",
+      "timestamp": "00:21:07",
+      "operator": "admin@aegis",
+      "action": "AUTOBAN_ADD",
+      "target": "198.51.100.77",
+      "severity": "WARN",
+      "details": "Banned IP 198.51.100.77 [Automated test ban] in eBPF LPM Trie Map"
+    },
+    {
+      "id": "log-1793380867755-223fab",
+      "timestamp": "00:21:07",
+      "operator": "admin@aegis",
+      "action": "XDP_MODULE_CHANGE",
+      "target": "syn_flood",
+      "severity": "WARN",
+      "details": "Toggled module \"TCP SYN Flood Guard\" to mode MONITOR"
+    },
+    {
+      "id": "log-1793380799084-ad81dc",
+      "timestamp": "00:19:59",
+      "operator": "admin@aegis",
+      "action": "DNS_REWRITE_DELETE",
+      "target": "demo.aegis.lan",
+      "severity": "WARN",
+      "details": "Xóa ánh xạ DNS Rewrite cho demo.aegis.lan khỏi AdGuard Home"
+    },
+    {
+      "id": "log-1793380778414-1b6aba",
+      "timestamp": "00:19:38",
+      "operator": "admin@aegis",
+      "action": "DNS_REWRITE_ADD",
+      "target": "demo.aegis.lan",
+      "severity": "INFO",
+      "details": "Tạo ánh xạ DNS Rewrite demo.aegis.lan -> 10.10.100.123 trên AdGuard Home"
+    },
+    {
+      "id": "log-1793380727201-df6783",
+      "timestamp": "00:18:47",
+      "operator": "admin@aegis",
+      "action": "DNS_REWRITE_ADD",
+      "target": "test.aegis.lan",
+      "severity": "INFO",
+      "details": "Tạo ánh xạ DNS Rewrite test.aegis.lan -> 10.10.100.99 trên AdGuard Home"
+    },
+    {
+      "id": "log-1793380702628-8d78e1",
+      "timestamp": "00:18:22",
+      "operator": "admin@aegis",
+      "action": "DNS_SERVICE_UNBLOCK",
+      "target": "discord",
+      "severity": "INFO",
+      "details": "Mở khóa dịch vụ \"Discord Chat & Voice\" trên AdGuard Home (VM 103)"
+    },
+    {
+      "id": "log-1793380690935-f298f9",
+      "timestamp": "00:18:10",
+      "operator": "admin@aegis",
+      "action": "DNS_SERVICE_BLOCK",
+      "target": "discord",
+      "severity": "INFO",
+      "details": "Chặn dịch vụ \"Discord Chat & Voice\" trên AdGuard Home (VM 103)"
+    },
+    {
+      "id": "log-1793377278692-55c301",
+      "timestamp": "23:21:18",
+      "operator": "admin@aegis",
+      "action": "BACKUP_RESTORE",
+      "target": "aegis-cluster-snapshot-20261030162118.backup",
+      "severity": "WARN",
+      "details": "Restored cluster configuration from snapshot aegis-cluster-snapshot-20261030162118.backup"
+    },
+    {
+      "id": "log-1793377278692-a2f94f",
+      "timestamp": "23:21:18",
+      "operator": "admin@aegis",
+      "action": "BACKUP_CREATE",
+      "target": "aegis-cluster-snapshot-20261030162118.backup",
+      "severity": "INFO",
+      "details": "Created full encrypted cluster backup aegis-cluster-snapshot-20261030162118.backup"
+    },
+    {
+      "id": "log-1793377278689-6057f3",
+      "timestamp": "23:21:18",
+      "operator": "admin@aegis",
+      "action": "SYSTEM_LOCKDOWN",
+      "target": "CLUSTER_NETWORK",
+      "severity": "WARN",
+      "details": "Emergency lockdown deactivated"
+    },
+    {
+      "id": "log-1793377278688-896ccf",
+      "timestamp": "23:21:18",
+      "operator": "admin@aegis",
+      "action": "SYSTEM_LOCKDOWN",
+      "target": "CLUSTER_NETWORK",
+      "severity": "CRIT",
+      "details": "Emergency lockdown activated across all nodes"
+    },
+    {
+      "id": "log-1793377278687-56cc7e",
+      "timestamp": "23:21:18",
+      "operator": "admin@aegis",
+      "action": "DNS_REWRITE_DELETE",
+      "target": "portal.aegis.local",
+      "severity": "WARN",
+      "details": "Deleted DNS rewrite for portal.aegis.local"
+    },
+    {
+      "id": "log-1793377278687-8f8e59",
+      "timestamp": "23:21:18",
+      "operator": "admin@aegis",
+      "action": "DNS_REWRITE_ADD",
+      "target": "portal.aegis.local",
+      "severity": "INFO",
+      "details": "Mapped internal domain portal.aegis.local -> 192.168.100.10"
+    },
+    {
+      "id": "log-1793377278686-4c304c",
+      "timestamp": "23:21:18",
+      "operator": "admin@aegis",
+      "action": "DNS_SERVICE_BLOCK",
+      "target": "minecraft",
+      "severity": "INFO",
+      "details": "Blocked Minecraft Online in AdGuard Home config"
+    },
+    {
+      "id": "log-1793377278686-0e8171",
+      "timestamp": "23:21:18",
+      "operator": "admin@aegis",
+      "action": "NAT_PORT_DELETE",
+      "target": "nat-#3",
+      "severity": "WARN",
+      "details": "Deleted NAT rule #3 (Web Port Forward Test)"
+    },
+    {
+      "id": "log-1793377278685-e02053",
+      "timestamp": "23:21:18",
+      "operator": "admin@aegis",
+      "action": "NAT_RULE_TOGGLE",
+      "target": "nat-#3",
+      "severity": "INFO",
+      "details": "Toggled NAT rule #3 to DISABLED"
+    },
+    {
+      "id": "log-1793377278684-94ee44",
+      "timestamp": "23:21:18",
+      "operator": "admin@aegis",
+      "action": "NAT_PORT_ADD",
+      "target": "dstnat-8080",
+      "severity": "INFO",
+      "details": "Forward port 8080 (TCP) to 192.168.100.50:80"
+    },
+    {
+      "id": "log-1793377278683-d98b5c",
+      "timestamp": "23:21:18",
+      "operator": "admin@aegis",
+      "action": "CIDR_RULE_DELETE",
+      "target": "cidr-1793377278682",
+      "severity": "WARN",
+      "details": "Deleted CIDR rule cidr-1793377278682"
+    },
+    {
+      "id": "log-1793377278682-c07695",
+      "timestamp": "23:21:18",
+      "operator": "admin@aegis",
+      "action": "CIDR_RULE_ADD",
+      "target": "10.50.0.0/16",
+      "severity": "INFO",
+      "details": "Added CIDR rule 10.50.0.0/16 [ALLOW] to eBPF Map"
+    },
+    {
+      "id": "log-1793377278682-19ff62",
+      "timestamp": "23:21:18",
+      "operator": "admin@aegis",
+      "action": "AUTOBAN_CLEAR",
+      "target": "198.51.100.77",
+      "severity": "INFO",
+      "details": "Manual unban triggered for 198.51.100.77"
+    },
+    {
+      "id": "log-1793377278681-d8f0a3",
+      "timestamp": "23:21:18",
+      "operator": "admin@aegis",
+      "action": "AUTOBAN_ADD",
+      "target": "198.51.100.77",
+      "severity": "WARN",
+      "details": "Banned IP 198.51.100.77 [Automated test ban] in eBPF LPM Trie Map"
+    },
+    {
+      "id": "log-1793377278678-380fae",
+      "timestamp": "23:21:18",
+      "operator": "admin@aegis",
+      "action": "XDP_MODULE_CHANGE",
+      "target": "syn_flood",
+      "severity": "WARN",
+      "details": "Toggled module \"TCP SYN Flood Guard\" to mode MONITOR"
+    },
+    {
+      "id": "log-1793377258556-e7d8aa",
+      "timestamp": "23:20:58",
+      "operator": "admin@aegis",
+      "action": "BACKUP_RESTORE",
+      "target": "aegis-cluster-snapshot-20261030162058.backup",
+      "severity": "WARN",
+      "details": "Restored cluster configuration from snapshot aegis-cluster-snapshot-20261030162058.backup"
+    },
+    {
+      "id": "log-1793377258555-478ec8",
+      "timestamp": "23:20:58",
+      "operator": "admin@aegis",
+      "action": "BACKUP_CREATE",
+      "target": "aegis-cluster-snapshot-20261030162058.backup",
+      "severity": "INFO",
+      "details": "Created full encrypted cluster backup aegis-cluster-snapshot-20261030162058.backup"
+    },
+    {
+      "id": "log-1793377258552-5e0020",
+      "timestamp": "23:20:58",
+      "operator": "admin@aegis",
+      "action": "SYSTEM_LOCKDOWN",
+      "target": "CLUSTER_NETWORK",
+      "severity": "WARN",
+      "details": "Emergency lockdown deactivated"
+    },
+    {
+      "id": "log-1793377258551-36a82d",
+      "timestamp": "23:20:58",
+      "operator": "admin@aegis",
+      "action": "SYSTEM_LOCKDOWN",
+      "target": "CLUSTER_NETWORK",
+      "severity": "CRIT",
+      "details": "Emergency lockdown activated across all nodes"
+    },
+    {
+      "id": "log-1793377258550-c9e404",
+      "timestamp": "23:20:58",
+      "operator": "admin@aegis",
+      "action": "DNS_REWRITE_DELETE",
+      "target": "portal.aegis.local",
+      "severity": "WARN",
+      "details": "Deleted DNS rewrite for portal.aegis.local"
+    },
+    {
+      "id": "log-1793377258550-14761b",
+      "timestamp": "23:20:58",
+      "operator": "admin@aegis",
+      "action": "DNS_REWRITE_ADD",
+      "target": "portal.aegis.local",
+      "severity": "INFO",
+      "details": "Mapped internal domain portal.aegis.local -> 192.168.100.10"
+    },
+    {
+      "id": "log-1793377258549-d52670",
+      "timestamp": "23:20:58",
+      "operator": "admin@aegis",
+      "action": "DNS_SERVICE_BLOCK",
+      "target": "minecraft",
+      "severity": "INFO",
+      "details": "Blocked Minecraft Online in AdGuard Home config"
+    },
+    {
+      "id": "log-1793377258548-028c35",
+      "timestamp": "23:20:58",
+      "operator": "admin@aegis",
+      "action": "NAT_PORT_DELETE",
+      "target": "nat-#3",
+      "severity": "WARN",
+      "details": "Deleted NAT rule #3 (Web Port Forward Test)"
+    },
+    {
+      "id": "log-1793377258548-10dbcf",
+      "timestamp": "23:20:58",
+      "operator": "admin@aegis",
+      "action": "NAT_RULE_TOGGLE",
+      "target": "nat-#3",
+      "severity": "INFO",
+      "details": "Toggled NAT rule #3 to DISABLED"
+    },
+    {
+      "id": "log-1793377258547-71ebad",
+      "timestamp": "23:20:58",
+      "operator": "admin@aegis",
+      "action": "NAT_PORT_ADD",
+      "target": "dstnat-8080",
+      "severity": "INFO",
+      "details": "Forward port 8080 (TCP) to 192.168.100.50:80"
+    },
+    {
+      "id": "log-1793377258546-b56249",
+      "timestamp": "23:20:58",
+      "operator": "admin@aegis",
+      "action": "CIDR_RULE_DELETE",
+      "target": "cidr-1793377258545",
+      "severity": "WARN",
+      "details": "Deleted CIDR rule cidr-1793377258545"
+    },
+    {
+      "id": "log-1793377258545-569986",
+      "timestamp": "23:20:58",
+      "operator": "admin@aegis",
+      "action": "CIDR_RULE_ADD",
+      "target": "10.50.0.0/16",
+      "severity": "INFO",
+      "details": "Added CIDR rule 10.50.0.0/16 [ALLOW] to eBPF Map"
+    },
+    {
+      "id": "log-1793377258544-249bf0",
+      "timestamp": "23:20:58",
+      "operator": "admin@aegis",
+      "action": "AUTOBAN_CLEAR",
+      "target": "198.51.100.77",
+      "severity": "INFO",
+      "details": "Manual unban triggered for 198.51.100.77"
+    },
+    {
+      "id": "log-1793377258543-660a38",
+      "timestamp": "23:20:58",
+      "operator": "admin@aegis",
+      "action": "AUTOBAN_ADD",
+      "target": "198.51.100.77",
+      "severity": "WARN",
+      "details": "Banned IP 198.51.100.77 [Automated test ban] in eBPF LPM Trie Map"
+    },
+    {
+      "id": "log-1793377258541-f419de",
+      "timestamp": "23:20:58",
+      "operator": "admin@aegis",
+      "action": "XDP_MODULE_CHANGE",
+      "target": "syn_flood",
+      "severity": "WARN",
+      "details": "Toggled module \"TCP SYN Flood Guard\" to mode MONITOR"
+    },
+    {
+      "id": "log-1793375502479-d8768d",
+      "timestamp": "22:51:42",
+      "operator": "admin@aegis",
+      "action": "VAULT_BACKUP_CREATE",
+      "target": "aegis-snapshot-2026-10-30T15-51-42-478Z.enc.json",
+      "severity": "INFO",
+      "details": "Generated encrypted cluster backup (6.8 KB)"
+    },
+    {
+      "id": "log-1793375502478-a56a90",
+      "timestamp": "22:51:42",
+      "operator": "admin@aegis",
+      "action": "DNS_SERVICE_TOGGLE",
+      "target": "TikTok & ByteDance",
+      "severity": "WARN",
+      "details": "Service TikTok & ByteDance blocked: true"
+    },
+    {
+      "id": "log-1793375502477-96ff91",
+      "timestamp": "22:51:42",
+      "operator": "admin@aegis",
+      "action": "NAT_RULE_ADD",
+      "target": "Port 8443",
+      "severity": "INFO",
+      "details": "Added NAT: 8443 -> 192.168.100.50:443"
+    },
+    {
+      "id": "log-1793375502477-fafac8",
+      "timestamp": "22:51:42",
+      "operator": "admin@aegis",
+      "action": "CIDR_ADD",
+      "target": "10.0.0.0/8",
+      "severity": "INFO",
+      "details": "Added CIDR 10.0.0.0/8 [ALLOW]"
+    },
+    {
+      "id": "log-1793375502476-75c75a",
+      "timestamp": "22:51:42",
+      "operator": "admin@aegis",
+      "action": "AUTOBAN_UNBAN",
+      "target": "203.0.113.50",
+      "severity": "INFO",
+      "details": "Removed IP from eBPF Blacklist"
+    },
+    {
+      "id": "log-1793375502476-0376a7",
+      "timestamp": "22:51:42",
+      "operator": "admin@aegis",
+      "action": "AUTOBAN_ADD",
+      "target": "203.0.113.50",
+      "severity": "CRIT",
+      "details": "Blocked IP 203.0.113.50: DDoS Test Vector"
+    },
+    {
+      "id": "log-1793375502475-e943bf",
+      "timestamp": "22:51:42",
+      "operator": "admin@aegis",
+      "action": "XDP_MODULE_CHANGE",
+      "target": "syn_flood",
+      "severity": "WARN",
+      "details": "Toggled module \"TCP SYN Flood Guard\" to mode MONITOR"
+    },
+    {
+      "id": "log-1793375461660-74602b",
+      "timestamp": "22:51:01",
+      "operator": "admin@aegis",
+      "action": "VAULT_BACKUP_CREATE",
+      "target": "aegis-snapshot-2026-10-30T15-51-01-659Z.enc.json",
+      "severity": "INFO",
+      "details": "Generated encrypted cluster backup (6.5 KB)"
+    },
+    {
+      "id": "log-1793375461658-11d423",
+      "timestamp": "22:51:01",
+      "operator": "admin@aegis",
+      "action": "DNS_SERVICE_TOGGLE",
+      "target": "TikTok & ByteDance",
+      "severity": "WARN",
+      "details": "Service TikTok & ByteDance blocked: true"
+    },
+    {
+      "id": "log-1793375461658-748249",
+      "timestamp": "22:51:01",
+      "operator": "admin@aegis",
+      "action": "NAT_RULE_ADD",
+      "target": "Port 8443",
+      "severity": "INFO",
+      "details": "Added NAT: 8443 -> 192.168.100.50:443"
+    },
+    {
+      "id": "log-1793375461657-a796bd",
+      "timestamp": "22:51:01",
+      "operator": "admin@aegis",
+      "action": "CIDR_ADD",
+      "target": "10.0.0.0/8",
+      "severity": "INFO",
+      "details": "Added CIDR 10.0.0.0/8 [ALLOW]"
+    },
+    {
+      "id": "log-1793375461657-f4de16",
+      "timestamp": "22:51:01",
+      "operator": "admin@aegis",
+      "action": "AUTOBAN_UNBAN",
+      "target": "203.0.113.50",
+      "severity": "INFO",
+      "details": "Removed IP from eBPF Blacklist"
+    },
+    {
+      "id": "log-1793375461656-ec8271",
+      "timestamp": "22:51:01",
+      "operator": "admin@aegis",
+      "action": "AUTOBAN_ADD",
+      "target": "203.0.113.50",
+      "severity": "CRIT",
+      "details": "Blocked IP 203.0.113.50: DDoS Test Vector"
+    },
+    {
+      "id": "log-1793375461655-e62164",
+      "timestamp": "22:51:01",
+      "operator": "admin@aegis",
+      "action": "XDP_MODULE_CHANGE",
+      "target": "syn_flood",
+      "severity": "WARN",
+      "details": "Toggled module \"TCP SYN Flood Guard\" to mode MONITOR"
+    },
+    {
+      "id": "log-1793375390408-66d4c1",
+      "timestamp": "22:49:50",
+      "operator": "admin@aegis",
+      "action": "BACKUP_RESTORE",
+      "target": "aegis-cluster-snapshot-20261030154950.backup",
+      "severity": "WARN",
+      "details": "Restored cluster configuration from snapshot aegis-cluster-snapshot-20261030154950.backup"
+    },
+    {
+      "id": "log-1793375390408-b082c1",
+      "timestamp": "22:49:50",
+      "operator": "admin@aegis",
+      "action": "BACKUP_CREATE",
+      "target": "aegis-cluster-snapshot-20261030154950.backup",
+      "severity": "INFO",
+      "details": "Created full encrypted cluster backup aegis-cluster-snapshot-20261030154950.backup"
+    },
+    {
+      "id": "log-1793375390407-30f2dc",
+      "timestamp": "22:49:50",
+      "operator": "admin@aegis",
+      "action": "SYSTEM_LOCKDOWN",
+      "target": "CLUSTER_NETWORK",
+      "severity": "WARN",
+      "details": "Emergency lockdown deactivated"
+    },
+    {
+      "id": "log-1793375390407-7416c7",
+      "timestamp": "22:49:50",
+      "operator": "admin@aegis",
+      "action": "SYSTEM_LOCKDOWN",
+      "target": "CLUSTER_NETWORK",
+      "severity": "CRIT",
+      "details": "Emergency lockdown activated across all nodes"
+    },
+    {
+      "id": "log-1793375390406-68e0ef",
+      "timestamp": "22:49:50",
+      "operator": "admin@aegis",
+      "action": "DNS_REWRITE_DELETE",
+      "target": "portal.aegis.local",
+      "severity": "WARN",
+      "details": "Deleted DNS rewrite for portal.aegis.local"
+    },
+    {
+      "id": "log-1793375390405-050ddb",
+      "timestamp": "22:49:50",
+      "operator": "admin@aegis",
+      "action": "DNS_REWRITE_ADD",
+      "target": "portal.aegis.local",
+      "severity": "INFO",
+      "details": "Mapped internal domain portal.aegis.local -> 192.168.100.10"
+    },
+    {
+      "id": "log-1793375390405-c55eb6",
+      "timestamp": "22:49:50",
+      "operator": "admin@aegis",
+      "action": "DNS_SERVICE_BLOCK",
+      "target": "minecraft",
+      "severity": "INFO",
+      "details": "Blocked Minecraft Online in AdGuard Home config"
+    },
+    {
+      "id": "log-1793375390404-f5204f",
+      "timestamp": "22:49:50",
+      "operator": "admin@aegis",
+      "action": "NAT_PORT_DELETE",
+      "target": "nat-#0",
+      "severity": "WARN",
+      "details": "Deleted NAT rule #0 (Web Port Forward Test)"
+    },
+    {
+      "id": "log-1793375390404-ee4f57",
+      "timestamp": "22:49:50",
+      "operator": "admin@aegis",
+      "action": "NAT_RULE_TOGGLE",
+      "target": "nat-#0",
+      "severity": "INFO",
+      "details": "Toggled NAT rule #0 to DISABLED"
+    },
+    {
+      "id": "log-1793375390403-e17e6e",
+      "timestamp": "22:49:50",
+      "operator": "admin@aegis",
+      "action": "NAT_PORT_ADD",
+      "target": "dstnat-8080",
+      "severity": "INFO",
+      "details": "Forward port 8080 (TCP) to 192.168.100.50:80"
+    },
+    {
+      "id": "log-1793375390401-fb607e",
+      "timestamp": "22:49:50",
+      "operator": "admin@aegis",
+      "action": "CIDR_RULE_DELETE",
+      "target": "cidr-1793375390401",
+      "severity": "WARN",
+      "details": "Deleted CIDR rule cidr-1793375390401"
+    },
+    {
+      "id": "log-1793375390401-340596",
+      "timestamp": "22:49:50",
+      "operator": "admin@aegis",
+      "action": "CIDR_RULE_ADD",
+      "target": "10.50.0.0/16",
+      "severity": "INFO",
+      "details": "Added CIDR rule 10.50.0.0/16 [ALLOW] to eBPF Map"
+    },
+    {
+      "id": "log-1793375390400-7ae003",
+      "timestamp": "22:49:50",
+      "operator": "admin@aegis",
+      "action": "AUTOBAN_CLEAR",
+      "target": "198.51.100.77",
+      "severity": "INFO",
+      "details": "Manual unban triggered for 198.51.100.77"
+    },
+    {
+      "id": "log-1793375390399-f1c4fd",
+      "timestamp": "22:49:50",
+      "operator": "admin@aegis",
+      "action": "AUTOBAN_ADD",
+      "target": "198.51.100.77",
+      "severity": "WARN",
+      "details": "Banned IP 198.51.100.77 [Automated test ban] in eBPF LPM Trie Map"
+    },
+    {
+      "id": "log-1793375390396-e3fb9e",
+      "timestamp": "22:49:50",
+      "operator": "admin@aegis",
+      "action": "XDP_MODULE_CHANGE",
+      "target": "syn_flood",
+      "severity": "WARN",
+      "details": "Toggled module \"TCP SYN Flood Guard\" to mode MONITOR"
+    },
+    {
+      "id": "log-1793375374794-332493",
+      "timestamp": "22:49:34",
+      "operator": "admin@aegis",
+      "action": "BACKUP_RESTORE",
+      "target": "aegis-cluster-snapshot-20261030154934.backup",
+      "severity": "WARN",
+      "details": "Restored cluster configuration from snapshot aegis-cluster-snapshot-20261030154934.backup"
+    },
+    {
+      "id": "log-1793375374794-b49e3c",
+      "timestamp": "22:49:34",
+      "operator": "admin@aegis",
+      "action": "BACKUP_CREATE",
+      "target": "aegis-cluster-snapshot-20261030154934.backup",
+      "severity": "INFO",
+      "details": "Created full encrypted cluster backup aegis-cluster-snapshot-20261030154934.backup"
+    },
+    {
+      "id": "log-1793375374793-cfc6f6",
+      "timestamp": "22:49:34",
+      "operator": "admin@aegis",
+      "action": "SYSTEM_LOCKDOWN",
+      "target": "CLUSTER_NETWORK",
+      "severity": "WARN",
+      "details": "Emergency lockdown deactivated"
+    },
+    {
+      "id": "log-1793375374793-bee328",
+      "timestamp": "22:49:34",
+      "operator": "admin@aegis",
+      "action": "SYSTEM_LOCKDOWN",
+      "target": "CLUSTER_NETWORK",
+      "severity": "CRIT",
+      "details": "Emergency lockdown activated across all nodes"
+    },
+    {
+      "id": "log-1793375374792-a68d4e",
+      "timestamp": "22:49:34",
+      "operator": "admin@aegis",
+      "action": "DNS_REWRITE_DELETE",
+      "target": "portal.aegis.local",
+      "severity": "WARN",
+      "details": "Deleted DNS rewrite for portal.aegis.local"
+    },
+    {
+      "id": "log-1793375374791-e71da4",
+      "timestamp": "22:49:34",
+      "operator": "admin@aegis",
+      "action": "DNS_REWRITE_ADD",
+      "target": "portal.aegis.local",
+      "severity": "INFO",
+      "details": "Mapped internal domain portal.aegis.local -> 192.168.100.10"
+    },
+    {
+      "id": "log-1793375374791-c0135f",
+      "timestamp": "22:49:34",
+      "operator": "admin@aegis",
+      "action": "DNS_SERVICE_BLOCK",
+      "target": "minecraft",
+      "severity": "INFO",
+      "details": "Blocked Minecraft Online in AdGuard Home config"
+    },
+    {
+      "id": "log-1793375374790-297193",
+      "timestamp": "22:49:34",
+      "operator": "admin@aegis",
+      "action": "NAT_PORT_DELETE",
+      "target": "nat-#0",
+      "severity": "WARN",
+      "details": "Deleted NAT rule #0 (Web Port Forward Test)"
+    },
+    {
+      "id": "log-1793375374790-5fcb4f",
+      "timestamp": "22:49:34",
+      "operator": "admin@aegis",
+      "action": "NAT_RULE_TOGGLE",
+      "target": "nat-#0",
+      "severity": "INFO",
+      "details": "Toggled NAT rule #0 to DISABLED"
+    },
+    {
+      "id": "log-1793375374789-7c538f",
+      "timestamp": "22:49:34",
+      "operator": "admin@aegis",
+      "action": "NAT_PORT_ADD",
+      "target": "dstnat-8080",
+      "severity": "INFO",
+      "details": "Forward port 8080 (TCP) to 192.168.100.50:80"
+    },
+    {
+      "id": "log-1793375374788-63f690",
+      "timestamp": "22:49:34",
+      "operator": "admin@aegis",
+      "action": "CIDR_RULE_DELETE",
+      "target": "cidr-1793375374787",
+      "severity": "WARN",
+      "details": "Deleted CIDR rule cidr-1793375374787"
+    },
+    {
+      "id": "log-1793375374787-40fbb6",
+      "timestamp": "22:49:34",
+      "operator": "admin@aegis",
+      "action": "CIDR_RULE_ADD",
+      "target": "10.50.0.0/16",
+      "severity": "INFO",
+      "details": "Added CIDR rule 10.50.0.0/16 [ALLOW] to eBPF Map"
+    },
+    {
+      "id": "log-1793375374785-860100",
+      "timestamp": "22:49:34",
+      "operator": "admin@aegis",
+      "action": "AUTOBAN_CLEAR",
+      "target": "198.51.100.77",
+      "severity": "INFO",
+      "details": "Manual unban triggered for 198.51.100.77"
+    },
+    {
+      "id": "log-1793375374783-063605",
+      "timestamp": "22:49:34",
+      "operator": "admin@aegis",
+      "action": "AUTOBAN_ADD",
+      "target": "198.51.100.77",
+      "severity": "WARN",
+      "details": "Banned IP 198.51.100.77 [Automated test ban] in eBPF LPM Trie Map"
+    },
+    {
+      "id": "log-1793375374782-9ea288",
+      "timestamp": "22:49:34",
+      "operator": "admin@aegis",
+      "action": "XDP_MODULE_CHANGE",
+      "target": "syn_flood",
+      "severity": "WARN",
+      "details": "Toggled module \"TCP SYN Flood Guard\" to mode MONITOR"
+    }
+  ]
+}

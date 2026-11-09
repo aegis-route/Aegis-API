@@ -1,0 +1,199 @@
+{
+  "modules": [
+    {
+      "id": "syn_flood",
+      "name": "TCP SYN Flood Guard",
+      "description": "XDP SYN-Cookie hardware offload & early drop invalid TCP flags",
+      "mode": "DROP",
+      "status": "ACTIVE",
+      "drops": 0,
+      "pps": 0,
+      "latency": "0.00 ms",
+      "category": "L3/L4"
+    },
+    {
+      "id": "udp_flood",
+      "name": "UDP Flood & Amplification",
+      "description": "Rate-limits arbitrary UDP datagrams & drops unrequested ports",
+      "mode": "DROP",
+      "status": "ACTIVE",
+      "drops": 0,
+      "pps": 0,
+      "latency": "0.00 ms",
+      "category": "L3/L4"
+    },
+    {
+      "id": "icmp_flood",
+      "name": "ICMP Smurf / Ping Throttle",
+      "description": "Enforces strict token-bucket ICMP echo limits (< 50 pps/src)",
+      "mode": "DROP",
+      "status": "ACTIVE",
+      "drops": 0,
+      "pps": 0,
+      "latency": "0.00 ms",
+      "category": "Protocol"
+    },
+    {
+      "id": "dns_amp",
+      "name": "DNS ANY Reflection Guard",
+      "description": "Blocks inbound spoofed UDP 53 ANY queries & large EDNS0 responses",
+      "mode": "DROP",
+      "status": "ACTIVE",
+      "drops": 0,
+      "pps": 0,
+      "latency": "0.00 ms",
+      "category": "Protocol"
+    },
+    {
+      "id": "ntp_amp",
+      "name": "NTP Monlist Shield",
+      "description": "Inspects UDP 123 payloads for Mode 7 Monlist request vectors",
+      "mode": "DROP",
+      "status": "ACTIVE",
+      "drops": 0,
+      "pps": 0,
+      "latency": "0.00 ms",
+      "category": "Protocol"
+    },
+    {
+      "id": "ssdp_amp",
+      "name": "SSDP / UPnP Amplification",
+      "description": "Silently swallows UDP 1900 M-SEARCH reflection probes at ingress",
+      "mode": "DROP",
+      "status": "ACTIVE",
+      "drops": 0,
+      "pps": 0,
+      "latency": "0.00 ms",
+      "category": "Protocol"
+    },
+    {
+      "id": "snmp_amp",
+      "name": "SNMP Reflection Filter",
+      "description": "Blocks unauthorized UDP 161/162 public community string queries",
+      "mode": "DROP",
+      "status": "ACTIVE",
+      "drops": 0,
+      "pps": 0,
+      "latency": "0.00 ms",
+      "category": "Protocol"
+    },
+    {
+      "id": "charon_ipsec",
+      "name": "IPSec IKE Handshake Guard",
+      "description": "Mitigates pseudo-IKE phase 1 SA initiation flood on UDP 500/4500",
+      "mode": "DROP",
+      "status": "ACTIVE",
+      "drops": 0,
+      "pps": 0,
+      "latency": "0.00 ms",
+      "category": "Protocol"
+    },
+    {
+      "id": "http_slowloris",
+      "name": "Slowloris / Slow POST Defense",
+      "description": "Tracks header completion timeouts & purges lingering TCP sockets",
+      "mode": "DROP",
+      "status": "ACTIVE",
+      "drops": 0,
+      "pps": 0,
+      "latency": "0.00 ms",
+      "category": "Application"
+    },
+    {
+      "id": "tls_reneg",
+      "name": "TLS Renegotiation Exhaustion",
+      "description": "Limits client-initiated SSL handshakes per TCP session",
+      "mode": "DROP",
+      "status": "ACTIVE",
+      "drops": 0,
+      "pps": 0,
+      "latency": "0.00 ms",
+      "category": "Application"
+    },
+    {
+      "id": "ip_frag",
+      "name": "IP Fragment Overlap Defense",
+      "description": "Prevents fragment reassembly memory exhaustion (Bonk/Jolt2)",
+      "mode": "DROP",
+      "status": "ACTIVE",
+      "drops": 0,
+      "pps": 0,
+      "latency": "0.00 ms",
+      "category": "L3/L4"
+    },
+    {
+      "id": "land_attack",
+      "name": "LAND Attack Filter",
+      "description": "Instant drop for packets where Source IP equals Destination IP",
+      "mode": "DROP",
+      "status": "ACTIVE",
+      "drops": 0,
+      "pps": 0,
+      "latency": "0.00 ms",
+      "category": "L3/L4"
+    },
+    {
+      "id": "teardrop",
+      "name": "Teardrop Malformed Offset",
+      "description": "Validates overlapping fragment length math inside eBPF parser",
+      "mode": "DROP",
+      "status": "ACTIVE",
+      "drops": 0,
+      "pps": 0,
+      "latency": "0.00 ms",
+      "category": "L3/L4"
+    },
+    {
+      "id": "smurf_attack",
+      "name": "Smurf / Broadcast Reflection",
+      "description": "Rejects traffic addressed to subnet broadcast IPs via external WAN",
+      "mode": "DROP",
+      "status": "ACTIVE",
+      "drops": 0,
+      "pps": 0,
+      "latency": "0.00 ms",
+      "category": "Protocol"
+    },
+    {
+      "id": "botnet_c2",
+      "name": "Mirai / Dark-IoT Botnet Shield",
+      "description": "BFF feeds threat intelligence list directly to eBPF hashmap",
+      "mode": "DROP",
+      "status": "ACTIVE",
+      "drops": 0,
+      "pps": 0,
+      "latency": "0.00 ms",
+      "category": "Stateful"
+    },
+    {
+      "id": "geoip_filter",
+      "name": "GeoIP High-Risk ASN Drop",
+      "description": "Drops inbound connections originating from sanctioned/bulletproof ASNs",
+      "mode": "DROP",
+      "status": "ACTIVE",
+      "drops": 0,
+      "pps": 0,
+      "latency": "0.00 ms",
+      "category": "Stateful"
+    }
+  ],
+  "autoBanList": [],
+  "cidrRules": [
+    {
+      "id": "cidr-1793375461657",
+      "cidr": "10.0.0.0/8",
+      "action": "ALLOW",
+      "comment": "Internal Network",
+      "hits": 0,
+      "added": "30/10/2026"
+    },
+    {
+      "id": "cidr-1793375502476",
+      "cidr": "10.0.0.0/8",
+      "action": "ALLOW",
+      "comment": "Internal Network",
+      "hits": 0,
+      "added": "30/10/2026"
+    }
+  ]
+}

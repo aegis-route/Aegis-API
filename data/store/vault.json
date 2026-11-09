@@ -1,0 +1,92 @@
+{
+  "backups": [
+    {
+      "id": "bk-1794235459165",
+      "filename": "aegis-cluster-snapshot-20261109144419.backup",
+      "target": "MikroTik RouterOS + eBPF Maps",
+      "size": "3.1 MB",
+      "created": "21:44:19 9/11/2026",
+      "hash": "c0bfe6e6...410c"
+    },
+    {
+      "id": "bk-1794235312463",
+      "filename": "aegis-cluster-snapshot-20261109144152.backup",
+      "target": "MikroTik RouterOS + eBPF Maps",
+      "size": "3.1 MB",
+      "created": "21:41:52 9/11/2026",
+      "hash": "e188c67e...410c"
+    },
+    {
+      "id": "bk-1793392361367",
+      "filename": "aegis-cluster-snapshot-20261030203241.backup",
+      "target": "MikroTik RouterOS + eBPF Maps",
+      "size": "3.1 MB",
+      "created": "03:32:41 31/10/2026",
+      "hash": "b7c507a7...410c"
+    },
+    {
+      "id": "bk-1793391662959",
+      "filename": "aegis-cluster-snapshot-20261030202102.backup",
+      "target": "MikroTik RouterOS + eBPF Maps",
+      "size": "3.1 MB",
+      "created": "03:21:02 31/10/2026",
+      "hash": "e17b3f37...410c"
+    },
+    {
+      "id": "bk-1793380870712",
+      "filename": "aegis-cluster-snapshot-20261030172110.backup",
+      "target": "MikroTik RouterOS + eBPF Maps",
+      "size": "3.1 MB",
+      "created": "00:21:10 31/10/2026",
+      "hash": "ebd6783e...410c"
+    },
+    {
+      "id": "bk-1793377278692",
+      "filename": "aegis-cluster-snapshot-20261030162118.backup",
+      "target": "MikroTik RouterOS + eBPF Maps",
+      "size": "3.1 MB",
+      "created": "23:21:18 30/10/2026",
+      "hash": "0c0efa24...410c"
+    },
+    {
+      "id": "bk-1793377258555",
+      "filename": "aegis-cluster-snapshot-20261030162058.backup",
+      "target": "MikroTik RouterOS + eBPF Maps",
+      "size": "3.1 MB",
+      "created": "23:20:58 30/10/2026",
+      "hash": "aeb5a237...410c"
+    },
+    {
+      "id": "bk-1793375502479",
+      "filename": "aegis-snapshot-2026-10-30T15-51-42-478Z.enc.json",
+      "target": "Full Cluster (eBPF + RouterOS + AdGuard)",
+      "size": "6.8 KB",
+      "created": "22:51:42 30/10/2026",
+      "hash": "314d5a8d742b9dd2"
+    },
+    {
+      "id": "bk-1793375461659",
+      "filename": "aegis-snapshot-2026-10-30T15-51-01-659Z.enc.json",
+      "target": "Full Cluster (eBPF + RouterOS + AdGuard)",
+      "size": "6.5 KB",
+      "created": "22:51:01 30/10/2026",
+      "hash": "1de36b44dafe93cd"
+    },
+    {
+      "id": "bk-1793375390408",
+      "filename": "aegis-cluster-snapshot-20261030154950.backup",
+      "target": "MikroTik RouterOS + eBPF Maps",
+      "size": "3.1 MB",
+      "created": "22:49:50 30/10/2026",
+      "hash": "2e2f8331...410c"
+    },
+    {
+      "id": "bk-1793375374794",
+      "filename": "aegis-cluster-snapshot-20261030154934.backup",
+      "target": "MikroTik RouterOS + eBPF Maps",
+      "size": "3.1 MB",
+      "created": "22:49:34 30/10/2026",
+      "hash": "c91833ee...410c"
+    }
+  ]
+}

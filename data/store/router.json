@@ -1,0 +1,86 @@
+{
+  "leases": [],
+  "pppoeProfiles": [
+    {
+      "id": "fpt",
+      "name": "FPT Telecom FTTH GPON",
+      "badge": "FPT Telecom",
+      "vlanId": 7,
+      "iface": "ether1",
+      "username": "",
+      "password": "",
+      "mtu": 1492,
+      "distance": 1,
+      "recommendation": "VLAN 7 chuẩn hóa GPON Bridge. MTU 1492. Hỗ trợ IPv6 Prefix Delegation /56.",
+      "status": "DISCONNECTED",
+      "uptime": "0s",
+      "ipAddress": "",
+      "gateway": "",
+      "usePeerDns": false,
+      "addDefaultRoute": true
+    },
+    {
+      "id": "viettel",
+      "name": "Viettel Telecom GPON",
+      "badge": "Viettel Telecom",
+      "vlanId": 35,
+      "iface": "ether4",
+      "username": "",
+      "password": "",
+      "mtu": 1492,
+      "distance": 2,
+      "recommendation": "VLAN 35 trên modem DASAN/ZTE/Huawei Bridge. Keepalive 10s tự động failover.",
+      "status": "DISCONNECTED",
+      "uptime": "0s",
+      "ipAddress": "",
+      "gateway": "",
+      "usePeerDns": false,
+      "addDefaultRoute": true
+    },
+    {
+      "id": "vnpt",
+      "name": "VNPT Vinaphone FiberVNN",
+      "badge": "VNPT Vinaphone",
+      "vlanId": 32,
+      "iface": "ether1",
+      "username": "",
+      "password": "",
+      "mtu": 1492,
+      "distance": 3,
+      "recommendation": "VLAN 32 chuẩn hóa mạng VNPT miền Bắc (hoặc VLAN 11). Tối ưu định tuyến cáp biển APG/AAG.",
+      "status": "DISCONNECTED",
+      "uptime": "0s",
+      "ipAddress": "",
+      "gateway": "",
+      "usePeerDns": false,
+      "addDefaultRoute": false
+    }
+  ],
+  "natRules": [
+    {
+      "chain": "dstnat",
+      "proto": "tcp",
+      "dstPort": "8443",
+      "toAddress": "192.168.100.50",
+      "toPort": "443",
+      "inInterface": "ether1",
+      "comment": "HTTPS Web",
+      "id": 1,
+      "packets": 0,
+      "enabled": true
+    },
+    {
+      "chain": "dstnat",
+      "proto": "tcp",
+      "dstPort": "8443",
+      "toAddress": "192.168.100.50",
+      "toPort": "443",
+      "inInterface": "ether1",
+      "comment": "HTTPS Web",
+      "id": 2,
+      "packets": 0,
+      "enabled": true
+    }
+  ],
+  "connections": []
+}

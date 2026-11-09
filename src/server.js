@@ -5,6 +5,8 @@ import rateLimit from '@fastify/rate-limit';
 import { config } from './config.js';
 import { geoRoutes } from './routes/geo.routes.js';
 import { syncRoutes } from './routes/sync.routes.js';
+import { aiRoutes } from './routes/ai.routes.js';
+import { managementRoutes } from './routes/management.routes.js';
 import { syncService } from './services/sync.service.js';
 
 async function bootstrap() {
@@ -29,6 +31,15 @@ async function bootstrap() {
   await app.register(cors, {
     origin: true
   });
+
+  // Support binary streams for Speedtest measurement
+  app.addContentTypeParser(
+    ['application/octet-stream', 'application/x-binary', 'text/plain'],
+    { parseAs: 'buffer' },
+    (req, body, done) => {
+      done(null, body);
+    }
+  );
 
   // Home / Documentation route
   app.get('/', async () => {
@@ -61,6 +72,13 @@ async function bootstrap() {
   // Register routes
   await app.register(syncRoutes);
   await app.register(geoRoutes);
+  await app.register(aiRoutes);
+
+  // Management REST APIs (Low-Tech / Zero-Config JSON Store)
+  // Register with /api/v1 (REST spec), /api (Panel direct), and root for maximum client compatibility
+  await app.register(managementRoutes, { prefix: '/api/v1' });
+  await app.register(managementRoutes, { prefix: '/api' });
+  await app.register(managementRoutes);
 
   // Global Error Handler
   app.setErrorHandler((error, request, reply) => {

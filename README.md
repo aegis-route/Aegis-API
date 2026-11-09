@@ -234,6 +234,60 @@ curl -X POST "http://localhost:3000/sync?force=true" \
 
 ---
 
+## 🛡️ Hệ thống REST API Quản Trị Đa Tầng (`/api/v1/*`)
+
+Hệ thống cung cấp cơ chế quản lý dữ liệu **Low-Tech / Zero-Config JSON Store** tại thư mục `data/store/`:
+
+### 1. Tường Lửa & XDP Mitigation
+- `GET /api/v1/firewall/modules`: Danh sách 16 module mitigation tầng kernel.
+- `PATCH /api/v1/firewall/modules`: Chuyển đổi trạng thái module (`DROP` / `MONITOR` / `OFF`).
+- `GET /api/v1/firewall/bans`: Danh sách IP đang bị khóa tự động.
+- `POST /api/v1/firewall/bans`: Thêm IP hoặc mở khóa IP (`{ id, ip }`).
+- `DELETE /api/v1/firewall/bans/:id`: Mở khóa IP theo ID hoặc IP query.
+- `GET /api/v1/firewall/cidr`: Danh sách subnet CIDR eBPF LPM Trie.
+- `POST /api/v1/firewall/cidr`: Thêm quy tắc CIDR mới (`{ cidr, action, comment }`).
+- `DELETE /api/v1/firewall/cidr/:id`: Xóa quy tắc CIDR.
+
+### 2. Định Tuyến, FastTrack & NAT
+- `GET /api/v1/router/leases`: Danh sách DHCP client leases.
+- `PATCH /api/v1/router/leases/fasttrack`: Bật/tắt hardware offload FastTrack cho lease.
+- `GET /api/v1/router/pppoe`: Cấu hình profile kết nối ISP PPPoE (FPT, Viettel, VNPT).
+- `POST /api/v1/router/pppoe`: Thêm cấu hình kết nối WAN.
+- `PUT /api/v1/router/pppoe/:id`: Sửa thông số kết nối WAN.
+- `DELETE /api/v1/router/pppoe/:id`: Xóa kết nối WAN.
+- `GET /api/v1/router/nat`: Danh sách quy tắc NAT Port Forwarding.
+- `POST /api/v1/router/nat`: Thêm mới hoặc toggle (`action: "toggle"`) NAT rule.
+- `PUT /api/v1/router/nat/:id`: Sửa chi tiết NAT rule.
+- `DELETE /api/v1/router/nat/:id`: Xóa NAT rule.
+- `GET /api/v1/router/connections`: Danh sách phiên Conntrack đang hoạt động.
+- `DELETE /api/v1/router/connections/:id`: Đóng kết nối Conntrack.
+
+### 3. DNS Engine & Kiểm Soát Nội Dung
+- `GET /api/v1/dns/services`: Trạng thái 11 nhóm ứng dụng kiểm soát (AdGuard Home).
+- `PATCH /api/v1/dns/services`: Bật/tắt chặn nhóm ứng dụng.
+- `GET /api/v1/dns/stats`: Thống kê truy vấn và tỷ lệ chặn DNS.
+- `GET /api/v1/dns/rewrites`: Danh sách bản ghi DNS Rewrite nội bộ.
+- `POST /api/v1/dns/rewrites`: Tạo ánh xạ domain nội bộ.
+- `DELETE /api/v1/dns/rewrites/:id`: Xóa bản ghi DNS Rewrite.
+- `GET /api/v1/dns/querylog`: Nhật ký phân giải tên miền thời gian thực.
+
+### 4. Viễn Trắc & Lockdown Khẩn Cấp
+- `GET /api/v1/telemetry/live`: Chỉ số lưu lượng, throughput, pps, drops, active sessions.
+- `POST /api/v1/telemetry/live`: Cập nhật chỉ số từ eBPF kernel driver / stress suite.
+- `PATCH /api/v1/telemetry/lockdown`: Bật/tắt chế độ khóa mạng toàn diện (Emergency Lockdown).
+
+### 5. Sao Lưu Cụm & Nhật Ký Kiểm Toán
+- `GET /api/v1/vault/backups`: Danh sách bản sao lưu snapshot cấu hình.
+- `POST /api/v1/vault/backups`: Tạo bản sao lưu mã hóa mới (`action: "create"`).
+- `POST /api/v1/vault/restore/:filename`: Khôi phục toàn bộ cấu hình từ snapshot.
+- `GET /api/v1/audit/logs`: Lịch sử kiểm toán hệ thống.
+- `POST /api/v1/audit/logs`: Ghi nhận thao tác quản trị mới.
+
+### 6. Sức Khỏe Đa Cụm
+- `GET /api/v1/cluster/health`: Tổng hợp tình trạng hoạt động và độ trễ 4 tầng phòng thủ (KernelFW VM 101, MikroTik VM 102, AdGuard VM 103, Aegis-API Core, Panel BFF VM 104).
+
+---
+
 ## 🚀 Hướng dẫn Triển khai (Deploy Production)
 
 ### Cách 1: Triển khai bằng Docker & Docker Compose (Khuyên dùng)

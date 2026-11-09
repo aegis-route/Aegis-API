@@ -1,0 +1,722 @@
+{
+  "services": [
+    {
+      "id": "minecraft",
+      "name": "Minecraft Online",
+      "category": "Gaming",
+      "icon": "Gamepad2",
+      "blocked": true,
+      "count24h": 0
+    },
+    {
+      "id": "roblox",
+      "name": "Roblox Platform",
+      "category": "Gaming",
+      "icon": "Gamepad",
+      "blocked": true,
+      "count24h": 0
+    },
+    {
+      "id": "gemini",
+      "name": "Google Gemini AI",
+      "category": "Artificial Intelligence",
+      "icon": "Bot",
+      "blocked": true,
+      "count24h": 0
+    },
+    {
+      "id": "tiktok",
+      "name": "TikTok & ByteDance",
+      "category": "Social Media",
+      "icon": "Share2",
+      "blocked": true,
+      "count24h": 0
+    },
+    {
+      "id": "facebook",
+      "name": "Facebook & Instagram",
+      "category": "Social Media",
+      "icon": "Globe",
+      "blocked": true,
+      "count24h": 0
+    },
+    {
+      "id": "doh_bypass",
+      "name": "Anti DoH/DoT Bypass",
+      "category": "Security Enforce",
+      "icon": "ShieldAlert",
+      "blocked": false,
+      "count24h": 0
+    },
+    {
+      "id": "torrent",
+      "name": "BitTorrent & P2P Trackers",
+      "category": "File Sharing",
+      "icon": "DownloadCloud",
+      "blocked": false,
+      "count24h": 0
+    },
+    {
+      "id": "discord",
+      "name": "Discord Chat & Voice",
+      "category": "Communications",
+      "icon": "MessageSquare",
+      "blocked": false,
+      "count24h": 0
+    },
+    {
+      "id": "steam",
+      "name": "Steam Community & CDN",
+      "category": "Gaming",
+      "icon": "PlayCircle",
+      "blocked": true,
+      "count24h": 0
+    },
+    {
+      "id": "pornography",
+      "name": "Adult & Explicit Content",
+      "category": "Content Safety",
+      "icon": "EyeOff",
+      "blocked": false,
+      "count24h": 0
+    },
+    {
+      "id": "tor",
+      "name": "Tor Relay & Onion Exit",
+      "category": "Anonymizer",
+      "icon": "Key",
+      "blocked": false,
+      "count24h": 0
+    }
+  ],
+  "stats": {
+    "queriesTotal": 4084,
+    "blockedTotal": 2534,
+    "blockedPercent": 62,
+    "avgLatencyMs": 30.41,
+    "rulesCount": 185513,
+    "topBlockedDomains": [
+      {
+        "ubt.tracking.shopee.vn": 2534
+      }
+    ],
+    "topClients": [
+      {
+        "10.10.1.199": 4060
+      },
+      {
+        "10.10.100.1": 24
+      }
+    ],
+    "topQueriedDomains": [
+      {
+        "optimizationguide-pa.googleapis.com": 749
+      },
+      {
+        "connectivity-check.ubuntu.com": 575
+      },
+      {
+        "safebrowsing.googleapis.com": 96
+      },
+      {
+        "2.ntp.ubuntu.com": 52
+      },
+      {
+        "upgrade.mikrotik.ltd": 24
+      },
+      {
+        "api.snapcraft.io": 12
+      },
+      {
+        "update.googleapis.com": 10
+      },
+      {
+        "clients2.google.com": 6
+      },
+      {
+        "edgedl.me.gvt1.com": 4
+      },
+      {
+        "clients.l.google.com": 3
+      },
+      {
+        "esm.ubuntu.com": 2
+      },
+      {
+        "motd.ubuntu.com": 2
+      },
+      {
+        "cdn.fwupd.org": 2
+      },
+      {
+        "changelogs.ubuntu.com": 2
+      },
+      {
+        "vn.archive.ubuntu.com": 2
+      },
+      {
+        "security.ubuntu.com": 2
+      },
+      {
+        "shopee.vn": 2
+      },
+      {
+        "_https._tcp.esm.ubuntu.com": 1
+      },
+      {
+        "199.1.10.10.in-addr.arpa": 1
+      },
+      {
+        "_https._tcp.motd.ubuntu.com": 1
+      },
+      {
+        "_http._tcp.vn.archive.ubuntu.com": 1
+      },
+      {
+        "_http._tcp.security.ubuntu.com": 1
+      }
+    ],
+    "topUpstreamsResponses": [
+      {
+        "8.8.4.4:53": 567
+      },
+      {
+        "8.8.8.8:53": 466
+      },
+      {
+        "https://dns.google:443/dns-query": 281
+      },
+      {
+        "tls://dns.google:853": 236
+      }
+    ]
+  },
+  "rewrites": [
+    {
+      "id": "rw-1",
+      "domain": "panel.aegis.lan",
+      "answer": "10.10.100.10",
+      "type": "A",
+      "enabled": false,
+      "description": "AdGuard Internal Rewrite (panel.aegis.lan -> 10.10.100.10)"
+    },
+    {
+      "id": "rw-2",
+      "domain": "dns.aegis.lan",
+      "answer": "10.10.100.2",
+      "type": "A",
+      "enabled": false,
+      "description": "AdGuard Internal Rewrite (dns.aegis.lan -> 10.10.100.2)"
+    },
+    {
+      "id": "rw-3",
+      "domain": "router.aegis.lan",
+      "answer": "10.10.1.1",
+      "type": "A",
+      "enabled": false,
+      "description": "AdGuard Internal Rewrite (router.aegis.lan -> 10.10.1.1)"
+    }
+  ],
+  "queryLogs": [
+    {
+      "id": "adg-log-1793422707109-0",
+      "time": "11:58:27",
+      "domain": "optimizationguide-pa.googleapis.com",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "HTTPS",
+      "status": "BLOCKED",
+      "responseTime": "45.44 ms"
+    },
+    {
+      "id": "adg-log-1793422677128-1",
+      "time": "11:57:57",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "HTTPS",
+      "status": "BLOCKED",
+      "responseTime": "0.04 ms"
+    },
+    {
+      "id": "adg-log-1793422677128-2",
+      "time": "11:57:57",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "A",
+      "status": "BLOCKED",
+      "responseTime": "0.12 ms"
+    },
+    {
+      "id": "adg-log-1793422628930-3",
+      "time": "11:57:08",
+      "domain": "connectivity-check.ubuntu.com",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "AAAA",
+      "status": "BLOCKED",
+      "responseTime": "49.22 ms"
+    },
+    {
+      "id": "adg-log-1793422609034-4",
+      "time": "11:56:49",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "HTTPS",
+      "status": "BLOCKED",
+      "responseTime": "0.10 ms"
+    },
+    {
+      "id": "adg-log-1793422609034-5",
+      "time": "11:56:49",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "A",
+      "status": "BLOCKED",
+      "responseTime": "0.12 ms"
+    },
+    {
+      "id": "adg-log-1793422540932-6",
+      "time": "11:55:40",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "A",
+      "status": "BLOCKED",
+      "responseTime": "0.19 ms"
+    },
+    {
+      "id": "adg-log-1793422540932-7",
+      "time": "11:55:40",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "HTTPS",
+      "status": "BLOCKED",
+      "responseTime": "0.11 ms"
+    },
+    {
+      "id": "adg-log-1793422533557-8",
+      "time": "11:55:33",
+      "domain": "optimizationguide-pa.googleapis.com",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "HTTPS",
+      "status": "BLOCKED",
+      "responseTime": "112.06 ms"
+    },
+    {
+      "id": "adg-log-1793422533556-9",
+      "time": "11:55:33",
+      "domain": "optimizationguide-pa.googleapis.com",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "A",
+      "status": "BLOCKED",
+      "responseTime": "111.67 ms"
+    },
+    {
+      "id": "adg-log-1793422482843-10",
+      "time": "11:54:42",
+      "domain": "connectivity-check.ubuntu.com",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "A",
+      "status": "BLOCKED",
+      "responseTime": "43.72 ms"
+    },
+    {
+      "id": "adg-log-1793422472836-11",
+      "time": "11:54:32",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "A",
+      "status": "BLOCKED",
+      "responseTime": "0.12 ms"
+    },
+    {
+      "id": "adg-log-1793422472836-12",
+      "time": "11:54:32",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "HTTPS",
+      "status": "BLOCKED",
+      "responseTime": "0.14 ms"
+    },
+    {
+      "id": "adg-log-1793422404730-13",
+      "time": "11:53:24",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "A",
+      "status": "BLOCKED",
+      "responseTime": "0.20 ms"
+    },
+    {
+      "id": "adg-log-1793422404730-14",
+      "time": "11:53:24",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "HTTPS",
+      "status": "BLOCKED",
+      "responseTime": "0.12 ms"
+    },
+    {
+      "id": "adg-log-1793422371238-15",
+      "time": "11:52:51",
+      "domain": "optimizationguide-pa.googleapis.com",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "A",
+      "status": "BLOCKED",
+      "responseTime": "176.50 ms"
+    },
+    {
+      "id": "adg-log-1793422371122-16",
+      "time": "11:52:51",
+      "domain": "optimizationguide-pa.googleapis.com",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "HTTPS",
+      "status": "BLOCKED",
+      "responseTime": "61.18 ms"
+    },
+    {
+      "id": "adg-log-1793422336633-17",
+      "time": "11:52:16",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "HTTPS",
+      "status": "BLOCKED",
+      "responseTime": "0.10 ms"
+    },
+    {
+      "id": "adg-log-1793422336633-18",
+      "time": "11:52:16",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "A",
+      "status": "BLOCKED",
+      "responseTime": "0.16 ms"
+    },
+    {
+      "id": "adg-log-1793422328920-19",
+      "time": "11:52:08",
+      "domain": "connectivity-check.ubuntu.com",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "AAAA",
+      "status": "BLOCKED",
+      "responseTime": "50.49 ms"
+    },
+    {
+      "id": "adg-log-1793422268539-20",
+      "time": "11:51:08",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "A",
+      "status": "BLOCKED",
+      "responseTime": "0.12 ms"
+    },
+    {
+      "id": "adg-log-1793422268539-21",
+      "time": "11:51:08",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "HTTPS",
+      "status": "BLOCKED",
+      "responseTime": "0.10 ms"
+    },
+    {
+      "id": "adg-log-1793422218790-22",
+      "time": "11:50:18",
+      "domain": "optimizationguide-pa.googleapis.com",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "HTTPS",
+      "status": "BLOCKED",
+      "responseTime": "44.68 ms"
+    },
+    {
+      "id": "adg-log-1793422200443-23",
+      "time": "11:50:00",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "HTTPS",
+      "status": "BLOCKED",
+      "responseTime": "0.27 ms"
+    },
+    {
+      "id": "adg-log-1793422200443-24",
+      "time": "11:50:00",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "A",
+      "status": "BLOCKED",
+      "responseTime": "0.16 ms"
+    },
+    {
+      "id": "adg-log-1793422182851-25",
+      "time": "11:49:42",
+      "domain": "connectivity-check.ubuntu.com",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "A",
+      "status": "BLOCKED",
+      "responseTime": "55.09 ms"
+    },
+    {
+      "id": "adg-log-1793422132332-26",
+      "time": "11:48:52",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "HTTPS",
+      "status": "BLOCKED",
+      "responseTime": "0.11 ms"
+    },
+    {
+      "id": "adg-log-1793422132332-27",
+      "time": "11:48:52",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "A",
+      "status": "BLOCKED",
+      "responseTime": "0.14 ms"
+    },
+    {
+      "id": "adg-log-1793422093459-28",
+      "time": "11:48:13",
+      "domain": "upgrade.mikrotik.ltd",
+      "clientIp": "10.10.100.1",
+      "clientName": "MikroTik Gateway (VM 102)",
+      "type": "A",
+      "status": "BLOCKED",
+      "responseTime": "144.28 ms"
+    },
+    {
+      "id": "adg-log-1793422064233-29",
+      "time": "11:47:44",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "A",
+      "status": "BLOCKED",
+      "responseTime": "0.13 ms"
+    },
+    {
+      "id": "adg-log-1793422064233-30",
+      "time": "11:47:44",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "HTTPS",
+      "status": "BLOCKED",
+      "responseTime": "0.12 ms"
+    },
+    {
+      "id": "adg-log-1793422039958-31",
+      "time": "11:47:19",
+      "domain": "optimizationguide-pa.googleapis.com",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "A",
+      "status": "BLOCKED",
+      "responseTime": "152.82 ms"
+    },
+    {
+      "id": "adg-log-1793422039945-32",
+      "time": "11:47:19",
+      "domain": "optimizationguide-pa.googleapis.com",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "HTTPS",
+      "status": "BLOCKED",
+      "responseTime": "139.53 ms"
+    },
+    {
+      "id": "adg-log-1793422028938-33",
+      "time": "11:47:08",
+      "domain": "connectivity-check.ubuntu.com",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "AAAA",
+      "status": "BLOCKED",
+      "responseTime": "49.30 ms"
+    },
+    {
+      "id": "adg-log-1793421996131-34",
+      "time": "11:46:36",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "HTTPS",
+      "status": "BLOCKED",
+      "responseTime": "0.11 ms"
+    },
+    {
+      "id": "adg-log-1793421996131-35",
+      "time": "11:46:36",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "A",
+      "status": "BLOCKED",
+      "responseTime": "0.12 ms"
+    },
+    {
+      "id": "adg-log-1793421928032-36",
+      "time": "11:45:28",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "HTTPS",
+      "status": "BLOCKED",
+      "responseTime": "0.04 ms"
+    },
+    {
+      "id": "adg-log-1793421928031-37",
+      "time": "11:45:28",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "A",
+      "status": "BLOCKED",
+      "responseTime": "0.12 ms"
+    },
+    {
+      "id": "adg-log-1793421882992-38",
+      "time": "11:44:42",
+      "domain": "connectivity-check.ubuntu.com",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "A",
+      "status": "BLOCKED",
+      "responseTime": "187.45 ms"
+    },
+    {
+      "id": "adg-log-1793421877481-39",
+      "time": "11:44:37",
+      "domain": "optimizationguide-pa.googleapis.com",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "A",
+      "status": "BLOCKED",
+      "responseTime": "151.70 ms"
+    },
+    {
+      "id": "adg-log-1793421877443-40",
+      "time": "11:44:37",
+      "domain": "optimizationguide-pa.googleapis.com",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "HTTPS",
+      "status": "BLOCKED",
+      "responseTime": "112.85 ms"
+    },
+    {
+      "id": "adg-log-1793421859932-41",
+      "time": "11:44:19",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "HTTPS",
+      "status": "BLOCKED",
+      "responseTime": "0.14 ms"
+    },
+    {
+      "id": "adg-log-1793421859932-42",
+      "time": "11:44:19",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "A",
+      "status": "BLOCKED",
+      "responseTime": "0.14 ms"
+    },
+    {
+      "id": "adg-log-1793421791823-43",
+      "time": "11:43:11",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "A",
+      "status": "BLOCKED",
+      "responseTime": "0.06 ms"
+    },
+    {
+      "id": "adg-log-1793421791822-44",
+      "time": "11:43:11",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "HTTPS",
+      "status": "BLOCKED",
+      "responseTime": "0.15 ms"
+    },
+    {
+      "id": "adg-log-1793421728945-45",
+      "time": "11:42:08",
+      "domain": "connectivity-check.ubuntu.com",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "AAAA",
+      "status": "BLOCKED",
+      "responseTime": "48.91 ms"
+    },
+    {
+      "id": "adg-log-1793421723718-46",
+      "time": "11:42:03",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "A",
+      "status": "BLOCKED",
+      "responseTime": "0.13 ms"
+    },
+    {
+      "id": "adg-log-1793421723718-47",
+      "time": "11:42:03",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "HTTPS",
+      "status": "BLOCKED",
+      "responseTime": "0.11 ms"
+    },
+    {
+      "id": "adg-log-1793421706934-48",
+      "time": "11:41:46",
+      "domain": "optimizationguide-pa.googleapis.com",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "HTTPS",
+      "status": "BLOCKED",
+      "responseTime": "107.54 ms"
+    },
+    {
+      "id": "adg-log-1793421655621-49",
+      "time": "11:40:55",
+      "domain": "ubt.tracking.shopee.vn",
+      "clientIp": "10.10.1.199",
+      "clientName": "Aegis-UbuntuClient (VM 105)",
+      "type": "A",
+      "status": "BLOCKED",
+      "responseTime": "0.06 ms"
+    }
+  ]
+}

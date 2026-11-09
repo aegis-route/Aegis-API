@@ -1,22 +1,22 @@
 {
-  "lastSync": "2026-10-12T06:00:33.580Z",
-  "releaseTag": "2026.10.10",
-  "publishedAt": "2026-10-10T06:43:30Z",
+  "lastSync": "2026-10-31T01:00:27.881Z",
+  "releaseTag": "fallback-Wed, 28 Oct 2026 06:39:40 GMT",
+  "publishedAt": "Wed, 28 Oct 2026 06:39:40 GMT",
   "files": {
     "asn": {
       "filename": "GeoLite2-ASN.mmdb",
-      "size": 8983422,
-      "updatedAt": "2026-10-12T06:00:33.567Z"
+      "size": 8994581,
+      "updatedAt": "2026-10-31T01:00:27.865Z"
     },
     "city": {
       "filename": "GeoLite2-City.mmdb",
-      "size": 50789481,
-      "updatedAt": "2026-10-12T06:00:33.577Z"
+      "size": 50762235,
+      "updatedAt": "2026-10-31T01:00:27.879Z"
     },
     "country": {
       "filename": "GeoLite2-Country.mmdb",
-      "size": 3410978,
-      "updatedAt": "2026-10-12T06:00:33.580Z"
+      "size": 3395840,
+      "updatedAt": "2026-10-31T01:00:27.881Z"
     }
   }
 }
